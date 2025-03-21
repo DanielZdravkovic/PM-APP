@@ -1,20 +1,16 @@
 <!DOCTYPE html>
 <header></header>
 <head>
-    
-</head>
-<body>
-    <!DOCTYPE html>
-<header></header>
-<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>INFO</title>
     <link rel="stylesheet" href="infoLook.css">
 </head>
 <body>
-    <div>
-        <p>Kippunkte im Erdklimasystem: Wann unser Klima aus dem Gleichgewicht gerät
+    <div id="Info-Text-Div">
+        <h3>Kippunkte im Erdklimasystem</h3>
+        <p id="Info-Text">
+        <span id="Offene-Frage"><em>Wann gerät unser Klima aus dem Gleichgewicht?</em></span><br>
         Kippunkte sind kritische Grenzen im Klimasystem der Erde.
         Werden sie überschritten, kommt es zu drastischen,
         oft unumkehrbaren Veränderungen.
@@ -27,10 +23,12 @@
         Die Wissenschaft geht davon aus,
         dass eine globale Erwärmung von mehr als 1,5 bis 2 °C viele dieser Prozesse auslösen könnte.</p>
     </div>
-    <div>
-        <img src="World-Map-1920x1080.jpg" id="World-Map">
+
+    <div id="World-Map-Div">
+        <img src="World-Map-Resized-1920x1080.png" id="World-Map">
+        <div class="Div-Bubble-Class" id="DivBubbleId"></div>
     </div>
-</body>
-</html>
+
+    <script language="javascript" src="infoLogic.js"></script>
 </body>
 </html>

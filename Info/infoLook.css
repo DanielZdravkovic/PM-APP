@@ -1,4 +1,45 @@
-#World-Map{
+#World-Map-Div {
+    position: relative; /* Container wird Bezugspunkt für Bubbles */
+    justify-content: center;
+    align-items: center;
     height: 100vh;
-    width: 100vw;
+    margin-left: 45px;
+}
+#World-Map{
+    position: absolute;
+    width: 90vw;
+    height: 90vh;
+    object-fit: cover;
+    background-color: #d3e1af;
+    z-index: -1;
+}
+#Info-Text-Div{
+    text-align: center;
+    font-size: 28px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+#Offene-Frage{
+    font-size: 32px;
+}
+.Div-Bubble-Class{
+    position: relative;
+}
+.bubbles{
+    position: absolute;
+    width: 120px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.9);
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 25px;
+    border: 2px solid black;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+body{
+    background-color: #d3e1af;
 }
