@@ -1,0 +1,128 @@
+[
+    {
+        "frage": "",
+        "quizArt": "", 
+        "bilder": {
+            "paths": [""],
+            "beschreibungen": [""]
+        },
+        "antwort": "",
+        "slider": {
+            "min": 0,
+            "max": 100,
+            "step": 1
+        }
+    },
+    {
+        "frage": "",
+        "quizArt": "", 
+        "bilder": {
+            "paths": [""],
+            "beschreibungen": [""]
+        },
+        "antwort": "",
+        "slider": {
+            "min": 0,
+            "max": 100,
+            "step": 1
+        }
+    },
+    {
+        "frage": "",
+        "quizArt": "", 
+        "bilder": {
+            "paths": [""],
+            "beschreibungen": [""]
+        },
+        "antwort": "",
+        "slider": {
+            "min": 0,
+            "max": 100,
+            "step": 1
+        }
+    },
+    {
+        "frage": "",
+        "quizArt": "", 
+        "bilder": {
+            "paths": [""],
+            "beschreibungen": [""]
+        },
+        "antwort": "",
+        "slider": {
+            "min": 0,
+            "max": 100,
+            "step": 1
+        }
+    },
+    {
+        "frage": "",
+        "quizArt": "", 
+        "bilder": {
+            "paths": [""],
+            "beschreibungen": [""]
+        },
+        "antwort": "",
+        "slider": {
+            "min": 0,
+            "max": 100,
+            "step": 1
+        }
+    },
+    {
+        "frage": "",
+        "quizArt": "", 
+        "bilder": {
+            "paths": [""],
+            "beschreibungen": [""]
+        },
+        "antwort": "",
+        "slider": {
+            "min": 0,
+            "max": 100,
+            "step": 1
+        }
+    },
+    {
+        "frage": "",
+        "quizArt": "", 
+        "bilder": {
+            "paths": [""],
+            "beschreibungen": [""]
+        },
+        "antwort": "",
+        "slider": {
+            "min": 0,
+            "max": 100,
+            "step": 1
+        }
+    },
+    {
+        "frage": "",
+        "quizArt": "", 
+        "bilder": {
+            "paths": [""],
+            "beschreibungen": [""]
+        },
+        "antwort": "",
+        "slider": {
+            "min": 0,
+            "max": 100,
+            "step": 1
+        }
+    },
+    {
+        "frage": "",
+        "quizArt": "", 
+        "bilder": {
+            "paths": [""],
+            "beschreibungen": [""]
+        },
+        "antwort": "",
+        "slider": {
+            "min": 0,
+            "max": 100,
+            "step": 1
+        }
+    }
+]

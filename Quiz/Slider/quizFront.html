@@ -1,21 +1,23 @@
-<!DOCTYPE html>
-<header>
-</header>
-<body>
+
     <p>Frage</p>
+    <button id="back">Back</button>
     <img src="https://via.placeholder.com/150" alt="Bild">
     <img src="https://via.placeholder.com/150" alt="Bild">
-    <input type="range" id="customSlider" min="0" max="100" value="50" step="1">
+    <input type="range" id="customSlider" min="0" max="200" value="100" step="1">
     <span id="sliderValue">1</span>
     <script>
         const slider = document.getElementById("customSlider");
         const output = document.getElementById("sliderValue");
         
-        function transformValue(val) {
-            if (val <= 50) {
-                return 100 - (val * 2); // Maps 0 → 100 and 50 → 1
-            } else {
-                return (val - 50) * 2 + 1; // Maps 50 → 1 and 100 → 100
+        function transformValue(val) { //Zahlen anpassen automatisch ueber json implementieren
+            if (val <= 99) {
+                return 100 - val; 
+            } 
+            else if(val == 100){
+                return 1;
+            }
+            else {
+                return val - 100; 
             }
         }
         
@@ -23,6 +25,19 @@
             output.textContent = transformValue(slider.value);
         });
     </script>
-</body>
-</html>
+
+    <button onclick="checkAnswer()" id="answer">Antwort</button>
+    <script>
+        function checkAnswer() {
+            const answerValue = document.getElementById("customSlider").value; 
+            alert(Math.abs(answerValue - 100));
+
+            answer.addEventListener("click", function () {
+            antwort.style.visibility = "visible";
+            });
+        }
+    </script>
+    
+    <div id="Antwort" style="visibility:hidden">hiiiii</div>
+
     
