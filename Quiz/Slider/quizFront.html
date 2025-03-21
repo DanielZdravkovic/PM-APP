@@ -3,21 +3,21 @@
     <button id="back">Back</button>
     <img src="https://via.placeholder.com/150" alt="Bild">
     <img src="https://via.placeholder.com/150" alt="Bild">
-    <input type="range" id="customSlider" min="0" max="200" value="100" step="1">
+    <input type="range" id="customSlider" min="0" max="19" value="9" step="1">
     <span id="sliderValue">1</span>
     <script>
         const slider = document.getElementById("customSlider");
         const output = document.getElementById("sliderValue");
         
         function transformValue(val) { //Zahlen anpassen automatisch ueber json implementieren
-            if (val <= 99) {
-                return 100 - val; 
+            if (val < 9) {
+                return  10 - val; 
             } 
-            else if(val == 100){
+            else if(val == 9){
                 return 1;
             }
             else {
-                return val - 100; 
+                return val - 9; 
             }
         }
         
@@ -30,7 +30,7 @@
     <script>
         function checkAnswer() {
             const answerValue = document.getElementById("customSlider").value; 
-            alert(Math.abs(answerValue - 100));
+            alert(answerValue);
 
             answer.addEventListener("click", function () {
             antwort.style.visibility = "visible";
