@@ -5,13 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CO2 Abdruck</title>
     <script>
-        function zeigeNachricht() {
-            alert("Hallo von NW.js!");
+        function quizAufrufen() {
+            window.location.href = "Quiz/Slider/quizFront.html";
+        }
+        function infoAufrufen() {
+            window.location.href = "Info/infoFront.html";
+        }
+        function co2Aufrufen() {
+            window.location.href = "Abdruck/co2Front.html";
         }
     </script>
 </head>
 <body>
     <h1>Willkommen bei meiner App!</h1>
-    <button onclick="zeigeNachricht()">Klick mich</button>
+    <button onclick="quizAufrufen()">Quiz</button>
+    <button onclick="infoAufrufen()">Info</button>
+    <button onclick="co2Aufrufen()">CO2</button>
 </body>
 </html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<header>
+</header>
+<body>
+    <p>Frage</p>
+    <img src="https://via.placeholder.com/150" alt="Bild">
+    <img src="https://via.placeholder.com/150" alt="Bild">
+    <input type="range" id="customSlider" min="0" max="100" value="50" step="1">
+    <span id="sliderValue">1</span>
+    <script>
+        const slider = document.getElementById("customSlider");
+        const output = document.getElementById("sliderValue");
+        
+        function transformValue(val) {
+            if (val <= 50) {
+                return 100 - (val * 2); // Maps 0 → 100 and 50 → 1
+            } else {
+                return (val - 50) * 2 + 1; // Maps 50 → 1 and 100 → 100
+            }
+        }
+        
+        slider.addEventListener("input", function () {
+            output.textContent = transformValue(slider.value);
+        });
+    </script>
+</body>
+</html>
+    
