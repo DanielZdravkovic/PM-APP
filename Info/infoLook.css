@@ -24,21 +24,20 @@
 .Div-Bubble-Class{
     position: relative;
 }
-.bubbles{
-    position: absolute;
-    width: 120px;
-    height: 50px;
-    background: rgba(255, 255, 255, 0.9);
-    color: black;
-    font-size: 14px;
-    font-weight: bold;
-    text-align: center;
-    line-height: 50px;
-    border-radius: 25px;
-    border: 2px solid black;
-    cursor: pointer;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+.bubbles {
+    display: flex; /* Ermöglicht zentrierten Text */
+    align-items: center; /* Vertikale Zentrierung */
+    justify-content: center; /* Horizontale Zentrierung */
+    text-align: center; /* Mehrzeiliger Text mittig */
+    width: 120px; /* Einheitliche Breite */
+    height: 120px; /* Höhe gleich Breite für perfekten Kreis */
+    border: 2px solid black; /* Schwarzer Rahmen */
+    border-radius: 50%; /* Vollständig rund */
+    background-color: white; /* Hintergrundfarbe */
+    word-wrap: break-word; /* Falls nötig, Umbrüche */
+    overflow: hidden; /* Kein Überlauf */
 }
+
 
 body{
     background-color: #d3e1af;

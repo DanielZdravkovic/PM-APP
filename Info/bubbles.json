@@ -1,4 +1,5 @@
 [
+  {"id": "bArkMee", "x": 45, "y": 0, "text": "Arktisches Meereis", "link": "#2" },
   {"id": "bGroEis", "x": 35, "y": 2, "text": "Grönlandischer Eisschild", "link": "#2" },
   {"id": "bYedPer", "x": 70, "y": 5, "text": "Yedoma Permafrost", "link": "#3" },
   {"id": "bBorWal", "x": 20, "y": 10, "text": "Borealwälder", "link": "#1" },
