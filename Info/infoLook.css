@@ -21,23 +21,21 @@
 #Offene-Frage{
     font-size: 32px;
 }
-.Div-Bubble-Class{
-    position: relative;
-}
 .bubbles {
+    position: absolute;
     display: flex; /* Ermöglicht zentrierten Text */
     align-items: center; /* Vertikale Zentrierung */
     justify-content: center; /* Horizontale Zentrierung */
     text-align: center; /* Mehrzeiliger Text mittig */
-    width: 120px; /* Einheitliche Breite */
-    height: 120px; /* Höhe gleich Breite für perfekten Kreis */
+    width: 20vw; /* Einheitliche Breite */
+    height: 20vh; /* Höhe gleich Breite für perfekten Kreis */
     border: 2px solid black; /* Schwarzer Rahmen */
     border-radius: 50%; /* Vollständig rund */
     background-color: white; /* Hintergrundfarbe */
     word-wrap: break-word; /* Falls nötig, Umbrüche */
     overflow: hidden; /* Kein Überlauf */
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: large;
+    font-size: 16px;
     transition: transform 0.3s ease-in-out;
 }
 .bubbles:hover{
@@ -49,8 +47,8 @@
 -------------------------------------------------------------------------------------
 */
 #bArkMee{
-    height: 20px;
-    width: 680px;
+    height: 3%;
+    width: 56%;
     border: 5px groove rgb(134, 82, 187);
     background: rgba(205, 32, 199, 0.25);
 }
@@ -124,6 +122,8 @@
     background: rgba(244, 84, 84, 0.35)
 }
 #bElNinSudOsz{
+    width: 100px;
+    height: 70px;
     border: 5px groove rgb(215, 52, 52);
     background: rgba(244, 84, 84, 0.35)
 }
