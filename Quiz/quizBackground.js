@@ -21,11 +21,18 @@
                 
         function runQuizScript() {
 
-            function getRandomQuizObject(){        
+            function getRandomQuizObject(){
+                if(jsonObjects.length === 0){
+                    window.location.href = "quizFinished.html";
+                    return;
+                    //wenn keine Quiz Fragen uebrig sind
+                }       
                 const zufaelligerIndex = Math.floor(Math.random() * jsonObjects.length);
 
-                const quizObject = jsonObjects[1];//eigentlich zufaelligerIndex, jetzt 0 zum testen
+                const quizObject = jsonObjects[zufaelligerIndex];
                 console.log(quizObject);
+                jsonObjects.splice(zufaelligerIndex, 1);
+
                 document.getElementById("quizContainer").innerHTML = quizObject.frage;
                 switch (quizObject.quizArt) {
                     case "multipleChoice":
@@ -89,9 +96,10 @@
                 antwortContainer.textContent = antwort;
                 frageContainer.textContent = frage;
 
-                if (quizObject.quizArt === "simple") {
-                    document.getElementById("correctPictureAnswer").src = quizObject.richtig;
+                if (quizObject.quizArt === "simple" || quizObject.quizArt === "multipleChoice") {
+                    document.getElementById("correctAnswer").textContent = quizObject.richtig;
                 }
+                
                     
             }
             

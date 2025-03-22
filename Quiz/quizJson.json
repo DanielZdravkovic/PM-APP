@@ -28,7 +28,7 @@
             }
         ],
         "antwort": "brooo",
-        "richtig": "1"
+        "richtig": "answer1"
     },
     {
         "frage": "ist",
@@ -37,13 +37,9 @@
             {  
                 "src": "blblbl",
                 "alt": "bla"
-            },
-            {  
-                "src": "bubu",
-                "alt": "baba"
             }
         ],
         "antwort": "brooo",
-        "richtig": "1"
+        "richtig": "answer3"
     }
 ]

@@ -1,11 +1,9 @@
 function activateImagesAsButtons() {
     const imageAnswers = document.getElementsByClassName("imagePlaceholder");
 
-    function clickOnImage(event) {
-        alert("clicked on image");
-
-        if (this.id === document.getElementById("correctPictureAnswer").textContent) {
-            // Do something if correct
+    function clickOnImage() {
+        if (this.id === document.getElementById("correctAnswer").textContent) {
+            alert("correct");// Do something if correct
         }
 
         document.getElementById("answerContainer").style.visibility = "visible";

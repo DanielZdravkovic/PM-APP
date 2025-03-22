@@ -1,23 +1,21 @@
-    <p>Frage</p>
-    <img src="https://via.placeholder.com/150" alt="Bild">
-    <img src="https://via.placeholder.com/150" alt="Bild">
-    <input type="range" id="customSlider" min="0" max="100" value="50" step="1">
-    <span id="sliderValue">1</span>
-    <script>
-        const slider = document.getElementById("customSlider");
-        const output = document.getElementById("sliderValue");
-        
-        function transformValue(val) {
-            if (val <= 50) {
-                return 100 - (val * 2); // Maps 0 → 100 and 50 → 1
-            } else {
-                return (val - 50) * 2 + 1; // Maps 50 → 1 and 100 → 100
-            }
-        }
-        
-        slider.addEventListener("input", function () {
-            output.textContent = transformValue(slider.value);
-        });
-    </script>
+    <span id="questionContainer">Frage</span>
+    <button id="backButton">Back</button>
+    <div id="answers">
+        <input type="radio" name="answer" value="answer1">
+        <label for="answer1">Antwort 1</label><br>
+        <input type="radio" name="answer" value="answer2">
+        <label for="answer2">Antwort 2</label><br>
+        <input type="radio" name="answer" value="answer3">
+        <label for="answer3">Antwort 3</label><br>
+        <input type="radio" name="answer" value="answer4">
+        <label for="answer4">Antwort 4</label><br>
+    </div>
+    <img src="https://via.placeholder.com/150" alt="Bild" class="imagePlaceholder">
+    <button id="checkAnswer" disabled>Antwort</button>
+    <div id="answerContainer" style="visibility:hidden">hiiiii</div>
+    <div id="correctAnswer" style="visibility:hidden">None</div>
+    <button id="nextButton" style="visibility:hidden">Next</button>
+    <div id="scriptContainer"></div>
+    
 
     
