@@ -17,6 +17,7 @@
         document.getElementById("answerContainer").style.visibility = "visible";
         nextButton.style.visibility = "visible";
         document.getElementById("checkAnswer").style.visibility = "hidden";
+        document.getElementById("customSlider").disabled = true;
     }
 
     function back() {

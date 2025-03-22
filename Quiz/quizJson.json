@@ -27,7 +27,8 @@
                 "alt": "baba"
             }
         ],
-        "antwort": "brooo"
+        "antwort": "brooo",
+        "richtig": "1"
     },
     {
         "frage": "ist",
@@ -42,6 +43,7 @@
                 "alt": "baba"
             }
         ],
-        "antwort": "brooo"
+        "antwort": "brooo",
+        "richtig": "1"
     }
 ]

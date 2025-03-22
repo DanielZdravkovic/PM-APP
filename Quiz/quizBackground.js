@@ -24,45 +24,48 @@
             function getRandomQuizObject(){        
                 const zufaelligerIndex = Math.floor(Math.random() * jsonObjects.length);
 
-                const quizObject = jsonObjects[0];//eigentlich zufaelligerIndex, jetzt 0 zum testen
-                const containerId = "quizContainer";
+                const quizObject = jsonObjects[1];//eigentlich zufaelligerIndex, jetzt 0 zum testen
                 console.log(quizObject);
                 document.getElementById("quizContainer").innerHTML = quizObject.frage;
                 switch (quizObject.quizArt) {
                     case "multipleChoice":
-                        loadHtmlIntoContainer("MultipleChoice/quizFront.html", containerId);
+                        loadQuiz("MultipleChoice/quizFront.html", quizObject);
                         break;
                     case "simple":
-                        loadHtmlIntoContainer("Simple/quizFront.html", containerId);
+                        loadQuiz("Simple/quizFront.html", quizObject);
                         break;
                     case "slider":
-                        loadHtmlIntoContainer("Slider/quizFront.html", containerId).then(() => {
-                            loadQuizScript("slider");
-                        }).then(() => {
-                            document.getElementById("nextButton").addEventListener("click", function () {
-                                runQuizScript();
-                            });
-                        }).then(() => {
-                            loadJsonIntoQuiz(quizObject);
-                        });
-                        
-                        console.log("heheheha");
+                        loadQuiz("Slider/quizFront.html", quizObject);                       
                         break;
                     default:
                         document.getElementById(containerId).innerHTML = "Es gab einen Fehler beim Laden des Quiz: Ungültiger Quiz-Typ:", quizObjekt.type;
                 }
             }
 
-            async function loadHtmlIntoContainer(filePath, containerId) {
+            function loadQuiz(quizPath, quizObject) {
+
+                loadHtmlIntoContainer(quizPath).then(() => {
+                    loadQuizScript(quizObject.quizArt);
+                }).then(() => {
+                    document.getElementById("nextButton").addEventListener("click", function () {
+                        runQuizScript();
+                    });
+                }).then(() => {
+                    loadJsonIntoQuiz(quizObject);
+                });
+                console.log("QuizGeladen");
+            }
+
+            async function loadHtmlIntoContainer(filePath) {
                 try {
                     const response = await fetch(filePath); 
                     if (!response.ok) {
                         throw new Error(`Failed to load HTML file: ${response.statusText}`);
                     }
                     const htmlContent = await response.text();
-                    document.getElementById(containerId).innerHTML = htmlContent; 
+                    document.getElementById("quizContainer").innerHTML = htmlContent; 
                 } catch (error) {
-                    document.getElementById(containerId).innerHTML = "Es gab einen Fehler beim Laden des Quiz: " + error;
+                    document.getElementById("quizContainer").innerHTML = "Es gab einen Fehler beim Laden des Quiz: " + error;
                 }
             }
 
@@ -85,6 +88,11 @@
                 
                 antwortContainer.textContent = antwort;
                 frageContainer.textContent = frage;
+
+                if (quizObject.quizArt === "simple") {
+                    document.getElementById("correctPictureAnswer").src = quizObject.richtig;
+                }
+                    
             }
             
 
