@@ -1,5 +1,4 @@
     function transformValue(val) { //Zahlen anpassen automatisch ueber json implementieren
-        console.log(val);
         if (val < 10) {
             return  10 - val; 
         } 
@@ -15,7 +14,7 @@
     function checkAnswer() {
         const answerValue = document.getElementById("customSlider").value; 
         alert(answerValue);
-        document.getElementById("answer").style.visibility = "visible";
+        document.getElementById("answerContainer").style.visibility = "visible";
         nextButton.style.visibility = "visible";
         document.getElementById("checkAnswer").style.visibility = "hidden";
     }

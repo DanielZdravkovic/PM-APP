@@ -24,7 +24,7 @@
             function getRandomQuizObject(){        
                 const zufaelligerIndex = Math.floor(Math.random() * jsonObjects.length);
 
-                const quizObject = jsonObjects[0];//eigentlich zufaelligerIndex
+                const quizObject = jsonObjects[0];//eigentlich zufaelligerIndex, jetzt 0 zum testen
                 const containerId = "quizContainer";
                 console.log(quizObject);
                 document.getElementById("quizContainer").innerHTML = quizObject.frage;
@@ -42,7 +42,11 @@
                             document.getElementById("nextButton").addEventListener("click", function () {
                                 runQuizScript();
                             });
+                        }).then(() => {
+                            loadJsonIntoQuiz(quizObject);
                         });
+                        
+                        console.log("heheheha");
                         break;
                     default:
                         document.getElementById(containerId).innerHTML = "Es gab einen Fehler beim Laden des Quiz: Ungültiger Quiz-Typ:", quizObjekt.type;
@@ -61,6 +65,28 @@
                     document.getElementById(containerId).innerHTML = "Es gab einen Fehler beim Laden des Quiz: " + error;
                 }
             }
+
+            function loadJsonIntoQuiz(quizObject) {
+                const frage = quizObject.frage;
+                const antwort = quizObject.antwort;
+                const imagePlaceholders = document.getElementsByClassName("imagePlaceholder");
+                let imageIndex = 0;  
+            
+                quizObject.bilder.forEach(bild => {
+                    if (imagePlaceholders[imageIndex]) {  
+                        imagePlaceholders[imageIndex].src = bild.src;
+                        imagePlaceholders[imageIndex].alt = bild.alt;
+                        imageIndex++;
+                    }
+                });
+            
+                const antwortContainer = document.getElementById("answerContainer");
+                const frageContainer = document.getElementById("questionContainer");
+                
+                antwortContainer.textContent = antwort;
+                frageContainer.textContent = frage;
+            }
+            
 
             function loadQuizScript(quizArt){
 

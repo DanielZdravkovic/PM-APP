@@ -2,43 +2,46 @@
     {
         "frage": "was ist was",
         "quizArt": "slider", 
-        "bilder": {
-            "paths": ["blblbl"],
-            "beschreibungen": ["bla"]
-        },
-        "antwort": "brooo",
-        "slider": {
-            "min": 0,
-            "max": 100,
-            "step": 1
-        }
+        "bilder":[
+            {  
+                "src": "blblbl",
+                "alt": "bla"
+            },
+            {  
+                "src": "bubu",
+                "alt": "baba"
+            }
+        ],
+        "antwort": "brooo"
     },
     {
         "frage": "was",
         "quizArt": "simple", 
-        "bilder": {
-            "paths": ["blblbl"],
-            "beschreibungen": ["bla"]
-        },
-        "antwort": "brooo",
-        "slider": {
-            "min": 0,
-            "max": 100,
-            "step": 1
-        }
+        "bilder":[
+            {  
+                "src": "blblbl",
+                "alt": "bla"
+            },
+            {  
+                "src": "bubu",
+                "alt": "baba"
+            }
+        ],
+        "antwort": "brooo"
     },
     {
         "frage": "ist",
         "quizArt": "multipleChoice", 
-        "bilder": {
-            "paths": ["blblbl"],
-            "beschreibungen": ["bla"]
-        },
-        "antwort": "brooo",
-        "slider": {
-            "min": 0,
-            "max": 100,
-            "step": 1
-        }
+        "bilder":[
+            {  
+                "src": "blblbl",
+                "alt": "bla"
+            },
+            {  
+                "src": "bubu",
+                "alt": "baba"
+            }
+        ],
+        "antwort": "brooo"
     }
 ]
