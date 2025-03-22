@@ -9,12 +9,6 @@ async function loadBubbles() {
             return;
         }
 
-        const container = document.getElementById("World-Map-Div");
-        if (!container) {
-            console.error("Fehler: Container 'World-Map-Div' nicht gefunden.");
-            return;
-        }
-
         const img = document.getElementById("World-Map");
         if (!img) {
             console.error("Fehler: Bild 'World-Map' nicht gefunden.");
@@ -39,19 +33,18 @@ async function loadBubbles() {
                 div.className = "bubbles";
                 div.id = bubble.id;
                 const textElement = document.createElement("p");
-                div.appendChild(textElement);
                 textElement.className = "text";
                 textElement.innerText = bubble.text;
+                div.appendChild(textElement);
                 div.onclick = () => openPopup(bubble.link);
                 console.log("Bubble erstellt:", bubble.text);
 
                 // Position berechnen
                 div.style.position = "absolute";
-                div.style.left = `${(bubble.x / 100) * imgWidth}px`;
-                div.style.top = `${(bubble.y / 100) * imgHeight}px`;
+                div.style.left = `${bubble.x}vw`;
+                div.style.top = `${bubble.y}vh`;
                 div.style.zIndex = "10";
-
-                container.appendChild(div);
+                document.getElementById("World-Map-Div").appendChild(div);
             });
         }
 
@@ -69,12 +62,11 @@ async function loadBubbles() {
 function openPopup(videoSrc) {
     let popup = document.getElementById("video-popup");
     let video = document.getElementById("popup-video");
-    
     if (!popup) {
         popup = document.createElement("div");
         popup.id = "video-popup";
         popup.style.position = "absolute";
-        popup.style.top = "90%";
+        popup.style.top = "40%";
         popup.style.left = "50%";
         popup.style.transform = "translate(-50%, -50%)";
         popup.style.width = "40vw";
@@ -106,7 +98,7 @@ function openPopup(videoSrc) {
 
         popup.appendChild(video);
         popup.appendChild(closeButton);
-        document.body.appendChild(popup);
+        document.getElementById("World-Map-Div").appendChild(popup);
     }
     
     video.src = videoSrc;

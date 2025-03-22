@@ -4,6 +4,7 @@
     align-items: center;
     height: 100vh;
     margin-left: 45px;
+    z-index: 0;
 }
 #World-Map{
     position: absolute;
@@ -22,21 +23,21 @@
     font-size: 32px;
 }
 .bubbles {
-    position: absolute;
     display: flex; /* Ermöglicht zentrierten Text */
     align-items: center; /* Vertikale Zentrierung */
     justify-content: center; /* Horizontale Zentrierung */
     text-align: center; /* Mehrzeiliger Text mittig */
     width: 20vw; /* Einheitliche Breite */
     height: 20vh; /* Höhe gleich Breite für perfekten Kreis */
-    border: 2px solid black; /* Schwarzer Rahmen */
+    border: 5px solid black; /* Schwarzer Rahmen */
     border-radius: 50%; /* Vollständig rund */
     background-color: white; /* Hintergrundfarbe */
     word-wrap: break-word; /* Falls nötig, Umbrüche */
     overflow: hidden; /* Kein Überlauf */
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 16px;
-    transition: transform 0.3s ease-in-out;
+    font-size: 100%;
+    z-index: 10;
+    transition: all 0.3s ease-in-out;
 }
 .bubbles:hover{
     cursor: pointer;
@@ -48,65 +49,68 @@
 */
 #bArkMee{
     height: 3%;
-    width: 56%;
-    border: 5px groove rgb(134, 82, 187);
+    width: 54%;
+    border: 5px solid rgb(134, 82, 187);
     background: rgba(205, 32, 199, 0.25);
 }
 #bArkMee.bubbles:hover{
     transform: scale(1, 1.1);
 }
 #bGroEis{
-    height: 75px;
-    width: 100px;
-    border: 5px groove rgb(134, 82, 187);
+    height: 9%;
+    width: 10%;
+    border: 5px solid rgb(134, 82, 187);
     background: rgba(205, 32, 199, 0.25)
 }
 #bYedPer{
-    height: 70px;
-    width: 126px;
-    border: 5px groove rgb(134, 82, 187);
+    height: 9%;
+    width: 9%;
+    border: 5px solid rgb(134, 82, 187);
     background: rgba(205, 32, 199, 0.25);
 }
 #bBorWal{
-    height: 70px;
-    width: 100px;
-    border: 5px groove rgb(39, 202, 34);
+    height: 8%;
+    width: 8%;
+    border: 5px solid rgb(39, 202, 34);
     background: rgba(61, 205, 32, 0.25)
 }
 #bMetHyd{
-    height: 60px;
-    width: 100px;
-    border: 5px groove rgb(134, 82, 187);
+    height: 8%;
+    width: 8%;
+    border: 5px solid rgb(134, 82, 187);
     background: rgba(205, 32, 199, 0.25)
 }
 #bJetStr{
-    height: 45px;
-    width: 140px;
-    border: 5px groove rgb(169, 122, 22);
-    background: rgba(192, 125, 37, 0.6);
+    height: 6%;
+    width: 85%;
+    border: 5px solid rgb(169, 122, 22);
+    background: rgba(192, 125, 37, 0.4);
     border-radius: 20%;
 }
+#bJetStr.bubbles:hover{
+    transform: scale(1, 1.1);
+}
 #bIndSom{
-    height: 110px;
-    width: 110px;
-    border: 5px groove rgb(215, 52, 52);
+    height: 13%;
+    width: 8%;
+    border: 5px solid rgb(215, 52, 52);
     background: rgba(244, 84, 84, 0.35)
 }
 #bTroKor{
-    height: 140px;
-    width: 140px;
-    border: 5px groove rgb(39, 202, 34);
+    height: 17%;
+    width: 10%;
+    border: 5px solid rgb(39, 202, 34);
     background: rgba(61, 205, 32, 0.25)
 }
 #bSWNor{
-    height: 100px;
-    width: 85px;
-    border: 5px groove rgb(215, 52, 52);
+    height: 11%;
+    width: 5%;
+    border: 5px solid rgb(215, 52, 52);
     background: rgba(244, 84, 84, 0.35)
 }
 #bAtlTheZir{
-    width: 60px;
-    border: 5px groove rgb(215, 52, 52);
+    width: 6.5%;
+    border: 5px solid rgb(215, 52, 52);
     background: rgba(244, 84, 84, 0.35);
     transform: rotate(25deg);
 }
@@ -117,38 +121,39 @@
     transform: rotate(25deg) scale(1.05);
 }
 #bWesMon{
-    height: 55px;
-    border: 5px groove rgb(215, 52, 52);
+    height: 7%;
+    width: 11%;
+    border: 5px solid rgb(215, 52, 52);
     background: rgba(244, 84, 84, 0.35)
 }
 #bElNinSudOsz{
-    width: 100px;
-    height: 70px;
-    border: 5px groove rgb(215, 52, 52);
+    width: 10%;
+    height: 14%;
+    border: 5px solid rgb(215, 52, 52);
     background: rgba(244, 84, 84, 0.35)
 }
 #bAmaReg{
-    height: 100px;
-    width: 100px;
-    border: 5px groove rgb(39, 202, 34);
+    height: 12%;
+    width: 7%;
+    border: 5px solid rgb(39, 202, 34);
     background: rgba(61, 205, 32, 0.25)
 }
 #bWesEis{
-    height: 55px;
-    width: 170px;
-    border: 5px groove rgb(77, 147, 228);
+    height: 7%;
+    width: 16%;
+    border: 5px solid rgb(77, 147, 228);
     background: rgba(47, 161, 218, 0.25)
 }
 #bMarBioKoh{
-    height: 65px;
-    width: 150px;
-    border: 5px groove rgb(39, 202, 34);
+    height: 8%;
+    width: 11%;
+    border: 5px solid rgb(39, 202, 34);
     background: rgba(61, 205, 32, 0.25)
 }
 #bOstEis{
-    height: 55px;
-    width: 165px;
-    border: 5px groove rgb(77, 147, 228);
+    height: 7%;
+    width: 16%;
+    border: 5px solid rgb(77, 147, 228);
     background: rgba(47, 161, 218, 0.25)
 }
 
