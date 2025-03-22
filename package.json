@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "init.js",
   "scripts": {
-    "start": "electron-packager ."
+    "start": "electron-packager . --overwrite"
   },
   "author": "",
   "license": "ISC",

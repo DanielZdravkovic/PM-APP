@@ -1,43 +1,16 @@
 
     <p>Frage</p>
-    <button id="back">Back</button>
+    <button id="backButton">Back</button>
     <img src="https://via.placeholder.com/150" alt="Bild">
     <img src="https://via.placeholder.com/150" alt="Bild">
-    <input type="range" id="customSlider" min="0" max="19" value="9" step="1">
+    <input type="range" id="customSlider" min="0" max="18" value="9" step="1">
     <span id="sliderValue">1</span>
-    <script>
-        const slider = document.getElementById("customSlider");
-        const output = document.getElementById("sliderValue");
-        
-        function transformValue(val) { //Zahlen anpassen automatisch ueber json implementieren
-            if (val < 9) {
-                return  10 - val; 
-            } 
-            else if(val == 9){
-                return 1;
-            }
-            else {
-                return val - 9; 
-            }
-        }
-        
-        slider.addEventListener("input", function () {
-            output.textContent = transformValue(slider.value);
-        });
-    </script>
 
-    <button onclick="checkAnswer()" id="answer">Antwort</button>
-    <script>
-        function checkAnswer() {
-            const answerValue = document.getElementById("customSlider").value; 
-            alert(answerValue);
-
-            answer.addEventListener("click", function () {
-            antwort.style.visibility = "visible";
-            });
-        }
-    </script>
+    <button id="checkAnswer">Antwort</button>
     
-    <div id="Antwort" style="visibility:hidden">hiiiii</div>
+    <div id="answer" style="visibility:hidden">hiiiii</div>
+    <div id="scriptContainer"></div>
+    <button id="nextButton" style="visibility:hidden">Next</button>
+    
 
     
