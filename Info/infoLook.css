@@ -38,6 +38,11 @@
     overflow: hidden; /* Kein Überlauf */
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: large;
+    transition: transform 0.3s ease-in-out;
+}
+.bubbles:hover{
+    cursor: pointer;
+    transform: scale(1.05);
 }
 
 /* Einzelne Bubbles
@@ -48,6 +53,9 @@
     width: 680px;
     border: 5px groove rgb(134, 82, 187);
     background: rgba(205, 32, 199, 0.25);
+}
+#bArkMee.bubbles:hover{
+    transform: scale(1, 1.1);
 }
 #bGroEis{
     height: 75px;
@@ -101,7 +109,14 @@
 #bAtlTheZir{
     width: 60px;
     border: 5px groove rgb(215, 52, 52);
-    background: rgba(244, 84, 84, 0.35)
+    background: rgba(244, 84, 84, 0.35);
+    transform: rotate(25deg);
+}
+#bAtlTheZir .text{
+    transform: rotate(-25deg);
+}
+#bAtlTheZir.bubbles:hover{
+    transform: rotate(25deg) scale(1.05);
 }
 #bWesMon{
     height: 55px;

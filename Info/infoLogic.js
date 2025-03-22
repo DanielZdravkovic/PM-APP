@@ -38,7 +38,10 @@ async function loadBubbles() {
                 let div = document.createElement("div");
                 div.className = "bubbles";
                 div.id = bubble.id;
-                div.innerText = bubble.text;
+                const textElement = document.createElement("p");
+                div.appendChild(textElement);
+                textElement.className = "text";
+                textElement.innerText = bubble.text;
                 div.onclick = () => window.location.href = bubble.link;
                 console.log("Bubble erstellt:", bubble.text);
 
