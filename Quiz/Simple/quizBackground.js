@@ -9,7 +9,6 @@ function activateImagesAsButtons() {
         document.getElementById("answerContainer").style.visibility = "visible";
         document.getElementById("nextButton").style.visibility = "visible";
 
-        // Remove click event from all images
         for (const img of imageAnswers) {
             img.removeEventListener("click", clickOnImage);
         }

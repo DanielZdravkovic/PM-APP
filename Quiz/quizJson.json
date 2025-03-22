@@ -1,45 +1,236 @@
 [
     {
-        "frage": "was ist was",
+        "frage": "Um wie viel Faches unterscheidet sich der CO₂-Ausstoß von einem Baumwoll-Shirt und einem Polyester-Shirt?",
         "quizArt": "slider", 
         "bilder":[
             {  
                 "src": "blblbl",
-                "alt": "bla"
+                "alt": "Baumwolle"
             },
             {  
                 "src": "bubu",
-                "alt": "baba"
+                "alt": "Polyester"
             }
         ],
-        "antwort": "brooo"
+        "antwort": "Antwort: Ein Baumwoll-Shirt verursacht 3-4 mal mehr CO₂ als ein Polyester-Shirt. Ein Baumwollshirt verursacht etwa 10-20 kg CO₂, was auf den hohen Wasserverbrauch, den Anbau, die Verarbeitung und den Transport von Baumwolle zurückzuführen ist. Der CO₂-Ausstoß wird durch die intensiven landwirtschaftlichen Praktiken und den hohen Wasserbedarf der Baumwollproduktion verstärkt. Polyester hingegen verursacht nur etwa 5-8 kg CO₂ pro Shirt, da es aus Erdölprodukten hergestellt wird, aber oft langlebiger ist und weniger Wasser benötigt."
     },
+
+
     {
-        "frage": "was",
+        "frage": "Um wie viel Faches unterscheidet sich der CO₂-Ausstoß von 1 Stunde Streaming und 1 Stunde Buch lesen?",
+        "quizArt": "slider", 
+        "bilder":[
+            {  
+                "src": "blblbl",
+                "alt": "Handy"
+            },
+            {  
+                "src": "bubu",
+                "alt": "Buch"
+            }
+        ],
+        "antwort": "Antwort: Streaming verursacht 6-7 mal mehr CO₂ als das Lesen eines Buches. Streaming-Dienste wie Netflix oder YouTube in HD verursachen etwa 40-100 g CO₂ pro Stunde, abhängig von der Streaming-Qualität und den verwendeten Geräten. Die CO₂-Emissionen entstehen dabei durch die Energie, die für das Streaming über Serverfarmen und die Netzwerkinfrastruktur benötigt wird. Im Vergleich dazu verursacht das Lesen eines Buches (über seine gesamte Lebensdauer betrachtet) nur etwa 5-10 g CO₂ pro Stunde. Diese geringe Menge stammt hauptsächlich aus der Produktion des Buches, einschließlich Papierherstellung und Transport."
+    },
+
+
+    {
+        "frage": "Um wie viel Faches unterscheidet sich der CO₂-Ausstoß von Rindfleisch und Hühnerfleisch?",
+        "quizArt": "slider", 
+        "bilder":[
+            {  
+                "src": "blblbl",
+                "alt": "Rindfleisch"
+            },
+            {  
+                "src": "bubu",
+                "alt": "Huehnerfleisch"
+            }
+        ],
+        "antwort": "Faktor: Rindfleisch verursacht 6-7 mal mehr CO₂ als Hühnerfleisch. Rindfleisch verursacht etwa 20-30 kg CO₂ pro Kilogramm, vor allem durch die Methanemissionen der Tiere, die Futtermittelproduktion und die Landnutzung. Im Vergleich dazu verursacht Hühnerfleisch nur etwa 4-6 kg CO₂ pro Kilogramm. Der Unterschied entsteht vor allem durch die höhere Ressourcenintensität in der Rindermast, den größeren Wasser- und Futtermittelverbrauch sowie die intensive Landnutzung für Weideflächen und Futteranbau."
+    },
+
+
+    {
+        "frage": "Um wie viel Faches unterscheidet sich der CO₂-Ausstoß von Schokolade und regionalen Äpfeln?",
+        "quizArt": "slider", 
+        "bilder":[
+            {  
+                "src": "blblbl",
+                "alt": "Schokolade"
+            },
+            {  
+                "src": "bubu",
+                "alt": "Apfel"
+            }
+        ],
+        "antwort": "Antwort: Schokolade verursacht 8-10 mal mehr CO₂ als regionale Äpfel. Schokolade, insbesondere der Kakaoanbau und die Verarbeitung, verursacht etwa 20-25 kg CO₂ pro Kilogramm. Dies liegt an der langen Transportkette des Kakaos, den energieintensiven Verarbeitungsprozessen und dem hohen Wasserverbrauch. Im Vergleich dazu verursachen Äpfel aus regionalem Anbau nur 2-3 kg CO₂ pro Kilogramm, da sie weniger aufwendige Produktionsprozesse und kürzere Transportwege haben."
+    },
+
+
+    {
+        "frage": "Was ist umweltfreundlicher?",
         "quizArt": "simple", 
         "bilder":[
             {  
                 "src": "blblbl",
-                "alt": "bla"
+                "alt": "Fahrrad"
             },
             {  
                 "src": "bubu",
-                "alt": "baba"
+                "alt": "U-Bahn"
             }
         ],
-        "antwort": "brooo",
+        "antwortmoeglichkeiten": [
+            "Ein Jahr Fahrradfahren",
+            "Ein Jahr U-Bahn fahren"
+        ],
+        "antwort": "Antwort: Fahrradfahren ist umweltfreundlicher als die Nutzung der U-Bahn. Ein Jahr Fahrradfahren verursacht etwa 5-10 kg CO₂, hauptsächlich für die Herstellung des Fahrrads. Beim Fahren selbst entstehen keine CO₂-Emissionen. Im Vergleich dazu verursacht die Nutzung der U-Bahn etwa 50-100 kg CO₂ pro Jahr. Der CO₂-Ausstoß hängt dabei stark von der Art der Energiequelle ab, die für den Betrieb der U-Bahn genutzt wird. Wenn die U-Bahn mit Strom aus fossilen Brennstoffen betrieben wird, kann der CO₂-Ausstoß höher sein als bei Fahrrädern. Insgesamt ist das Fahrrad jedoch wesentlich umweltfreundlicher als die U-Bahn.",
         "richtig": "answer1"
     },
+
+
     {
-        "frage": "ist",
+        "frage": "Was verursacht mehr CO₂ pro Person?",
+        "quizArt": "simple", 
+        "bilder":[
+            {  
+                "src": "blblbl",
+                "alt": "Flugzeug"
+            },
+            {  
+                "src": "bubu",
+                "alt": "Auto"
+            }
+        ],
+        "antwortmoeglichkeiten": [
+            "Ein Flug von Berlin nach München",
+            "500 km Autofahren"
+        ],
+        "antwort": "Antwort: Ein Flug verursacht mehr CO₂ pro Person als das Autofahren. Ein Flug von Berlin nach München verursacht etwa 150-200 kg CO₂ pro Person, abhängig von Faktoren wie Flugzeugtyp, Auslastung und Effizienz. Flugreisen verursachen aufgrund der hohen Treibstoffverbrennung auf großen Entfernungen hohe Emissionen. Im Vergleich dazu verursacht eine Autofahrt von 500 km mit einem durchschnittlichen Benziner etwa 80-100 kg CO₂ pro Auto. Dies ist eine niedrigere Zahl, da das Auto in der Regel mit mehreren Personen genutzt wird, wodurch sich der CO₂-Ausstoß pro Person verringert.",
+        "richtig": "answer1"
+    },
+
+
+    {
+        "frage": "Was verursacht mehr CO₂ bei der Herstellung?",
+        "quizArt": "simple", 
+        "bilder":[
+            {  
+                "src": "blblbl",
+                "alt": "Jeans"
+            },
+            {  
+                "src": "bubu",
+                "alt": "Sneaker"
+            }
+        ],
+        "antwortmoeglichkeiten": [
+            "Jeans",
+            "Sneaker"
+        ],
+        "antwort": "Antwort: Sneaker verursachen mehr CO₂ bei der Herstellung als Jeans. Jeans verursachen etwa 30-40 kg CO₂ pro Stück. Dies resultiert aus der Baumwollproduktion, dem Färbeprozess, dem Wasserverbrauch und den langen Transportwegen. Zudem müssen Jeans oft in energieintensiven Fabriken produziert werden. Sneaker verursachen dagegen etwa 50-100 kg CO₂ pro Paar. Der höhere CO₂-Ausstoß bei Sneakern resultiert aus der Kombination von Materialien (wie Gummi, Kunststoff und synthetischen Stoffen), der Produktion von Einzelteilen, der Verwendung von Kleber und den längeren Transportwegen, da Sneaker häufig in weit entfernten Ländern gefertigt werden.",
+        "richtig": "answer2"
+    },
+
+
+    {
+        "frage": "Welches hat die höhere CO₂-Bilanz pro Kilogramm?",
+        "quizArt": "simple", 
+        "bilder":[
+            {  
+                "src": "blblbl",
+                "alt": "Banane"
+            },
+            {  
+                "src": "bubu",
+                "alt": "Avocado"
+            }
+        ],
+        "antwortmoeglichkeiten": [
+            "Bananen",
+            "Avocados"
+        ],
+        "antwort": "Antwort: Avocados haben eine höhere CO₂-Bilanz als Bananen. Avocados verursachen etwa 2.5-3.5 kg CO₂ pro Kilogramm. Dies liegt vor allem an dem hohen Wasserverbrauch im Anbau und dem langen Transportweg, da Avocados häufig aus weit entfernten Ländern, wie z.B. Mexiko oder Chile, importiert werden. Der Transport erfolgt oft per Flugzeug, was ebenfalls sehr energieintensiv ist. Im Vergleich dazu verursachen Bananen etwa 0.8-1.2 kg CO₂ pro Kilogramm. Bananen werden meist per Schiff transportiert, was eine viel effizientere Methode ist und damit den CO₂-Ausstoß verringert. Auch die Anbaubedingungen von Bananen sind weniger ressourcenintensiv als die von Avocados.",
+        "richtig": "answer2"
+    },
+
+
+    {
+        "frage": "Welches Gemüse hat eine überraschend hohe CO₂-Bilanz?",
         "quizArt": "multipleChoice", 
         "bilder":[
             {  
                 "src": "blblbl",
-                "alt": "bla"
+                "alt": "Tomate"
             }
         ],
-        "antwort": "brooo",
+        "antwortmoeglichkeiten": [
+            "Tomaten",
+            "Karotten",
+            "Zucchini",
+            "Spinat"
+        ],
+        "antwort": "Antwort: Tomaten, insbesondere wenn sie in beheizten Gewächshäusern angebaut werden, haben eine CO₂-Bilanz von etwa 2-10 kg CO₂ pro Kilogramm, was überraschend hoch ist im Vergleich zu Karotten, Zucchini und Spinat (0,2-1 kg CO₂/kg).",
+        "richtig": "answer1"
+    },
+
+
+    {
+        "frage": "Wie viel CO₂ verursacht ein Jahr lang tägliches Duschen (ca. 10 Minuten mit Warmwasser)?",
+        "quizArt": "multipleChoice", 
+        "bilder":[
+            {  
+                "src": "blblbl",
+                "alt": "Dusche"
+            }
+        ],
+        "antwortmoeglichkeiten": [
+            "50 kg CO₂",
+            "150 kg CO₂",
+            "400 kg CO₂",
+            "800 kg CO₂"
+        ],
+        "antwort": "Antwort: Ein 10-minütiges Duschen mit einem Durchlauferhitzer verursacht etwa 1 kg CO₂ pro Dusche, was auf ein Jahr hochgerechnet ca. 365 kg CO₂ ergibt – fast so viel wie ein Inlandsflug.",
         "richtig": "answer3"
+    },
+
+
+    {
+        "frage": "Welches Material hat in der Herstellung den höchsten CO₂-Fußabdruck pro Kilogramm?",
+        "quizArt": "multipleChoice", 
+        "bilder":[
+            {  
+                "src": "blblbl",
+                "alt": "Aluminium"
+            }
+        ],
+        "antwortmoeglichkeiten": [
+            "Holz",
+            "Baumwolle",
+            "Aluminiume",
+            "Glas"
+        ],
+        "antwort": "Antwort: Aluminium hat einen hohen CO₂-Ausstoß in der Produktion, etwa 10-20 kg CO₂ pro Kilogramm, da die Umwandlung zu reinem Aluminium sehr hohe Temperaturen (über 950°C) und viel Strom benötigt.",
+        "richtig": "answer3"
+    },
+
+
+    {
+        "frage": "Welches pflanzliche Lebensmittel verursacht den höchsten CO₂-Ausstoß pro Kilogramm?",
+        "quizArt": "multipleChoice", 
+        "bilder":[
+            {  
+                "src": "blblbl",
+                "alt": "Reis"
+            }
+        ],
+        "antwortmoeglichkeiten": [
+            "Reis",
+            "Kartoffeln",
+            "Birnen",
+            "Linsen"
+        ],
+        "antwort": "Antwort: Reis verursacht etwa 4 kg CO₂ pro Kilogramm, da der Anbau in überfluteten Feldern erfolgt, in denen Methan freigesetzt wird. Dies ist deutlich mehr als bei Kartoffeln (~0,5 kg CO₂/kg) oder Linsen (~1 kg CO₂/kg).",
+        "richtig": "answer1"
     }
 ]

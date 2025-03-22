@@ -99,8 +99,21 @@
                 if (quizObject.quizArt === "simple" || quizObject.quizArt === "multipleChoice") {
                     document.getElementById("correctAnswer").textContent = quizObject.richtig;
                 }
+
+                if(quizObject.quizArt === "multipleChoice") {
+                    imagePlaceholders[0].style.display = "none";
                 
-                    
+                    const radios = document.getElementsByName("answer");
+                    for (let i = 0; i < radios.length; i++) {
+                        
+                        const label = document.querySelector(`label[for="${radios[i].value}"]`);
+                        
+                        if (label) {
+                            label.textContent = quizObject.antwortmoeglichkeiten[i];
+                        }
+                    }
+                }
+                 
             }
             
 

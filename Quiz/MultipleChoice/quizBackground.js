@@ -25,6 +25,8 @@ function checkAnswer() {
     document.getElementById("answerContainer").style.visibility = "visible";
     nextButton.style.visibility = "visible";
     document.getElementById("checkAnswer").style.visibility = "hidden";
+    document.getElementById("questionmarkImg").style.display = "none";
+    document.getElementsByClassName("imagePlaceholder")[0].style.display = "block";
 }
 
 document.getElementById("checkAnswer").addEventListener("click", checkAnswer);
