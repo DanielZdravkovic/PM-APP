@@ -1,6 +1,6 @@
 [
-  {"id": "bArkMee", "x": 21, "y": 0, "text": "Arktisches Meereis", "link": "#2" },
-  {"id": "bGroEis", "x": 35, "y": 2, "text": "Grönlandischer Eisschild", "link": "#2" },
+  {"id": "bArkMee", "x": 21, "y": -1, "text": "Arktisches Meereis", "link": "#2" },
+  {"id": "bGroEis", "x": 35, "y": 3.5, "text": "Grönlandischer Eisschild", "link": "#2" },
   {"id": "bYedPer", "x": 70, "y": 4, "text": "Yedoma Permafrost", "link": "#3" },
   {"id": "bBorWal", "x": 20, "y": 10, "text": "Borealwälder", "link": "#1" },
   {"id": "bMetHyd", "x": 79, "y": 12, "text": "Methanhydrate", "link": "#2" },
@@ -9,7 +9,7 @@
   {"id": "bAtlTheZir", "x": 32, "y": 19, "text": "Atlantische thermohaline Zirkulation", "link": "#2" },
   {"id": "bIndSom", "x": 65, "y": 37, "text": "Indischer Sommermonsun", "link": "#3" },
   {"id": "bWesMon", "x": 42, "y": 37, "text": "Westafrikanischer Monsum", "link": "#1" },
-  {"id": "bElNinSudOsz", "x": 16, "y": 45, "text": "El Nino-Südliche Oszillation", "link": "#2" },
+  {"id": "bElNinSudOsz", "x": 15, "y": 45, "text": "El Nino-Südliche Oszillation", "link": "#2" },
   {"id": "bAmaReg", "x": 26, "y": 46, "text": "Amazonas Regenwald", "link": "#3" },
   {"id": "bTroKor", "x": 80, "y": 40, "text": "Tropische Korallenriffe", "link": "#1" },
   {"id": "bMarBioKoh", "x": 61, "y": 68, "text": "Marine biologische Kohlenstoffpumpe", "link": "#2" },
