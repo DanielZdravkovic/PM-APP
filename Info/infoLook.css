@@ -38,6 +38,65 @@
     overflow: hidden; /* Kein Überlauf */
 }
 
+/* Einzelne Bubbles
+-------------------------------------------------------------------------------------
+*/
+#bArkMee{
+    height: 20px;
+    width: 680px;
+}
+#bYedPer{
+    height: 70px;
+    width: 126px;
+}
+#bBorWal{
+    height: 70px;
+    width: 100px;
+}
+#bMetHyd{
+    height: 60px;
+    width: 100px;
+}
+#bIndSom{
+    height: 110px;
+    width: 110px;
+}
+#bTroKor{
+    height: 140px;
+    width: 140px;
+}
+#bSWNor{
+    height: 100px;
+    width: 85px;
+
+}
+#bAtlTheZir{
+    width: 60px;
+}
+#bWesMon{
+    height: 55px;
+}
+#bAmaReg{
+    height: 100px;
+    width: 100px;
+}
+#bWesEis{
+    height: 55px;
+    width: 170px;
+}
+#bMarBioKoh{
+    height: 65px;
+    width: 150px;
+}
+#bOstEis{
+    height: 55px;
+    width: 165px;
+}
+
+
+/*
+-------------------------------------------------------------------------------------
+*/
 
 body{
     background-color: #d3e1af;
