@@ -19,6 +19,12 @@ button{
     cursor: pointer;
 }
 
+#backButton{
+    position:absolute;
+    right: 30px;
+    top: 50px
+}
+
 button:hover{
     background-color: #378139;
 }
