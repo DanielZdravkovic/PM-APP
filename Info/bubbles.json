@@ -10,7 +10,7 @@
   {"id": "bIndSom", "x": 58, "y": 28, "text": "Indischer Sommermonsun", "link": "link/link1.mp4" },
   {"id": "bWesMon", "x": 37, "y": 39, "text": "Westafrikanischer Monsum", "link": "link/link1.mp4" },
   {"id": "bElNinSudOsz", "x": 13.5, "y": 45, "text": "El Nino-Südliche Oszillation", "link": "link/link1.mp4" },
-  {"id": "bAmaReg", "x": 23, "y": 41, "text": "Amazonas Regenwald", "link": "link/link1.mp4" },
+  {"id": "bAmaReg", "x": 23, "y": 41, "text": "Amazonas Regenwald", "link": "link/AmaReg.mp4" },
   {"id": "bTroKor", "x": 72, "y": 36, "text": "Tropische Korallenriffe", "link": "link/link1.mp4" },
   {"id": "bMarBioKoh", "x": 53, "y": 61, "text": "Marine biologische Kohlenstoffpumpe", "link": "link/link1.mp4" },
   {"id": "bWesEis", "x": 21, "y": 78, "text": "Westafrikanischer Eisschild", "link": "link/WesEis.mp4" },
