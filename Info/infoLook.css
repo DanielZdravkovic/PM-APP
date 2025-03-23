@@ -1,0 +1,183 @@
+#World-Map-Div {
+    position: relative; /* Container wird Bezugspunkt für Bubbles */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-left: 45px;
+    z-index: 0;
+}
+#World-Map{
+    position: absolute;
+    width: 90vw;
+    height: 90vh;
+    object-fit: cover;
+    background-color: #d3e1af;
+    z-index: -1;
+}
+#Info-Text-Div{
+    font-size: 20px; /* Etwas größer als Standard */
+    font-family: 'Inter', sans-serif; /* Moderne Sans-Serif-Schrift */
+    color: #222; /* Dunkles Grau für angenehmen Kontrast */
+    line-height: 1.8; /* Mehr Platz zwischen den Zeilen */
+    max-width: 900px; /* Breiter, aber nicht zu breit */
+    text-align: left; /* Standardmäßige Ausrichtung */
+    margin: 20px auto; /* Zentriert mit Abstand */ 
+}
+#Offene-Frage{
+    font-size: 25px;
+}
+#title{
+    font-size: 30px;
+    margin-bottom: 0px;
+}
+.bubbles {
+    display: flex; /* Ermöglicht zentrierten Text */
+    align-items: center; /* Vertikale Zentrierung */
+    justify-content: center; /* Horizontale Zentrierung */
+    text-align: center; /* Mehrzeiliger Text mittig */
+    width: 20vw; /* Einheitliche Breite */
+    height: 20vh; /* Höhe gleich Breite für perfekten Kreis */
+    border: 5px solid black; /* Schwarzer Rahmen */
+    border-radius: 50%; /* Vollständig rund */
+    background-color: white; /* Hintergrundfarbe */
+    word-wrap: break-word; /* Falls nötig, Umbrüche */
+    overflow: hidden; /* Kein Überlauf */
+    z-index: 10;
+    transition: all 0.2s ease-in-out;
+}
+.bubbles:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+.bubbles p{
+    font-size: 14px;
+    font-family: 'Merriweather', serif;
+    color: #2C3E50;
+    font-weight: 600;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 4px 8px;
+    border-radius: 5px;
+}
+
+/* Einzelne Bubbles
+-------------------------------------------------------------------------------------
+*/
+#bArkMee{
+    height: 3%;
+    width: 54%;
+    border: 5px solid rgb(134, 82, 187);
+    background: rgba(205, 32, 199, 0.25);
+}
+#bArkMee.bubbles:hover{
+    transform: scale(1, 1.1);
+}
+#bGroEis{
+    height: 9%;
+    width: 10%;
+    border: 5px solid rgb(134, 82, 187);
+    background: rgba(205, 32, 199, 0.25)
+}
+#bYedPer{
+    height: 9%;
+    width: 9%;
+    border: 5px solid rgb(134, 82, 187);
+    background: rgba(205, 32, 199, 0.25);
+}
+#bBorWal{
+    height: 8%;
+    width: 8%;
+    border: 5px solid rgb(39, 202, 34);
+    background: rgba(61, 205, 32, 0.25)
+}
+#bMetHyd{
+    height: 8%;
+    width: 8%;
+    border: 5px solid rgb(134, 82, 187);
+    background: rgba(205, 32, 199, 0.25)
+}
+#bJetStr{
+    height: 6%;
+    width: 82%;
+    border: 5px solid rgb(169, 122, 22);
+    background: rgba(192, 125, 37, 0.4);
+    border-radius: 20%;
+}
+#bJetStr.bubbles:hover{
+    transform: scale(1, 1.1);
+}
+#bIndSom{
+    height: 13%;
+    width: 8%;
+    border: 5px solid rgb(215, 52, 52);
+    background: rgba(244, 84, 84, 0.35)
+}
+#bTroKor{
+    height: 17%;
+    width: 10%;
+    border: 5px solid rgb(39, 202, 34);
+    background: rgba(61, 205, 32, 0.25)
+}
+#bSWNor{
+    height: 11%;
+    width: 5%;
+    border: 5px solid rgb(215, 52, 52);
+    background: rgba(244, 84, 84, 0.35);
+}
+#bAtlTheZir{
+    width: 6.5%;
+    border: 5px solid rgb(215, 52, 52);
+    background: rgba(244, 84, 84, 0.35);
+    transform: rotate(25deg);
+}
+#bAtlTheZir .text{
+    transform: rotate(-25deg);
+}
+#bAtlTheZir.bubbles:hover{
+    transform: rotate(25deg) scale(1.05);
+}
+#bWesMon{
+    height: 7%;
+    width: 11%;
+    border: 5px solid rgb(215, 52, 52);
+    background: rgba(244, 84, 84, 0.35)
+}
+#bElNinSudOsz{
+    width: 10%;
+    height: 14%;
+    border: 5px solid rgb(215, 52, 52);
+    background: rgba(244, 84, 84, 0.35)
+}
+#bAmaReg{
+    height: 12%;
+    width: 7%;
+    border: 5px solid rgb(39, 202, 34);
+    background: rgba(61, 205, 32, 0.25)
+}
+#bWesEis{
+    height: 7%;
+    width: 16%;
+    border: 5px solid rgb(77, 147, 228);
+    background: rgba(47, 161, 218, 0.25)
+}
+#bMarBioKoh{
+    height: 8%;
+    width: 11%;
+    border: 5px solid rgb(39, 202, 34);
+    background: rgba(61, 205, 32, 0.25)
+}
+#bOstEis{
+    height: 7%;
+    width: 16%;
+    border: 5px solid rgb(77, 147, 228);
+    background: rgba(47, 161, 218, 0.25)
+}
+
+
+/*
+-------------------------------------------------------------------------------------
+*/
+
+body{
+    background-color: #d3e1af;
+}

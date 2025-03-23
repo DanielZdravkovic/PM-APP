@@ -1,0 +1,18 @@
+[
+  {"id": "bArkMee", "x": 19.5, "y": -1, "text": "Arktisches Meereis", "link": "link/ArkMee.mp4" },
+  {"id": "bGroEis", "x": 31, "y": 3, "text": "Grönlandischer Eisschild", "link": "link/GroEis.mp4" },
+  {"id": "bYedPer", "x": 61, "y": 3, "text": "Yedoma Permafrost", "link": "link/YedPer.mp4" },
+  {"id": "bBorWal", "x": 20, "y": 7, "text": "Borealwälder", "link": "link/BorWal.mp4" },
+  {"id": "bMetHyd", "x": 69, "y": 10, "text": "Methanhydrate", "link": "link/MetHyd.mp4" },
+  {"id": "bJetStr", "x": 6, "y": 17, "text": "Jetstream", "link": "link/link1.mp4" },
+  {"id": "bSWNor", "x": 13, "y": 15, "text": "SW-Nord-amerika", "link": "link/link1.mp4" },
+  {"id": "bAtlTheZir", "x": 29, "y": 18, "text": "Atlantische thermohaline Zirkulation", "link": "link/link1.mp4" },
+  {"id": "bIndSom", "x": 58, "y": 28, "text": "Indischer Sommermonsun", "link": "link/link1.mp4" },
+  {"id": "bWesMon", "x": 37, "y": 39, "text": "Westafrikanischer Monsum", "link": "link/link1.mp4" },
+  {"id": "bElNinSudOsz", "x": 13.5, "y": 45, "text": "El Nino-Südliche Oszillation", "link": "link/link1.mp4" },
+  {"id": "bAmaReg", "x": 23, "y": 41, "text": "Amazonas Regenwald", "link": "link/link1.mp4" },
+  {"id": "bTroKor", "x": 72, "y": 36, "text": "Tropische Korallenriffe", "link": "link/link1.mp4" },
+  {"id": "bMarBioKoh", "x": 53, "y": 61, "text": "Marine biologische Kohlenstoffpumpe", "link": "link/link1.mp4" },
+  {"id": "bWesEis", "x": 21, "y": 78, "text": "Westafrikanischer Eisschild", "link": "link/WesEis.mp4" },
+  {"id": "bOstEis", "x": 54, "y": 78, "text": "Ostantarktischer Eisschild", "link": "link/OstEis.mp4" }
+]
