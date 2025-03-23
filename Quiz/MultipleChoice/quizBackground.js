@@ -21,12 +21,12 @@ function checkAnswer() {
         }
         radio.disabled = true;
     }
-
+    const images = document.getElementsByClassName("imagePlaceholder");
     document.getElementById("answerContainer").style.display = "flex";
-    nextButton.style.visibility = "visible";
+    document.getElementById("nextButton").style.visibility = "visible";
     document.getElementById("checkAnswer").style.visibility = "hidden";
-    document.getElementById("questionmarkImg").style.display = "none";
-    document.getElementsByClassName("imagePlaceholder")[0].style.display = "block";
+    images[0].style.display = "flex";
+    images[1].style.display = "none";
 }
 
 document.getElementById("checkAnswer").addEventListener("click", checkAnswer);
