@@ -1,9 +1,66 @@
 <!DOCTYPE html>
-<header>
-</header>
-<head></head>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CO₂-Schnellcheck</title>
+    <link rel="stylesheet" href="co2Look.css">
+</head>
 <body>
-    <p>CO2 Abdruck</p>
+    <button class="menu-button" id="menu-button">Menü</button>
+    <div class="container">
+        <h2>CO₂-Schnellcheck</h2>
+        
+        <div class="section">
+            <h3>Haus</h3>
+            <label>Anzahl Personen im Haushalt:</label>
+            <input type="number" id="personen" value="1" min="0">
+            <label>Wohnfläche (m²):</label>
+            <input type="number" id="wohnflaeche" value="50" min="0">
+            <label>Bauart des Hauses:</label>
+            <select id="bauart">
+                <option>Altbau</option>
+                <option>Neubau</option>
+            </select>
+            <label>Art der Heizung:</label>
+            <select id="heizung">
+                <option>Fossil</option>
+                <option>Erneuerbar</option>
+            </select>
+        </div>
+        
+        <div class="section">
+            <h3>Mobilität</h3>
+            <label>Auto vorhanden?</label>
+            <select id="auto">
+                <option>Ja</option>
+                <option>Nein</option>
+            </select>
+            <label>Flugstunden pro Jahr:</label>
+            <input type="number" id="flugstunden" value="0" min="0">
+        </div>
+        
+        <div class="section">
+            <h3>Ernährung</h3>
+            <label>Fleischkonsum?</label>
+            <select id="fleisch">
+                <option>Ja</option>
+                <option>Nein</option>
+            </select>
+        </div>
+        
+        <button onclick="berechnen()">CO₂ berechnen</button>
+        
+        <table class="result-table" id="ergebnis" style="display: none;">
+            <tr><th>Kategorie</th><th>CO₂-Ausstoß (t)</th></tr>
+            <tr><td>Haus</td><td id="haus">-</td></tr>
+            <tr><td>Mobilität</td><td id="mobilitaet">-</td></tr>
+            <tr><td>Ernährung</td><td id="ernaehrung">-</td></tr>
+            <tr><td>Sonstiger Konsum</td><td id="sonstiges">-</td></tr>
+            <tr><td><b>Gesamt</b></td><td id="gesamt"><b>-</b></td></tr>
+        </table>
+    </div>
+    
+    <script language="javascript" src="co2Background.js"></script>
 </body>
 </html>
-    

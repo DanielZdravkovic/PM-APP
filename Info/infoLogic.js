@@ -114,5 +114,8 @@ function openPopup(videoSrc) {
     video.src = videoSrc;
     popup.style.display = "flex";
 }
+document.getElementById("menu-button").addEventListener("click", function() {
+    window.location.href = "../index.html";
+});
 
 loadBubbles();
