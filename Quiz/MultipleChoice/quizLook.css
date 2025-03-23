@@ -11,8 +11,14 @@
     font-size: 30px;
 }
 
-#quizContainerMultipleChoice .imagePlaceholderContainer{
+#quizContainerMultipleChoice .imagePlaceholderContainer {
     background-color: white;
+    border: #378139 2px solid;
+    width: 480px;
+    height: 480px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
 }
 
 #quizContainerMultipleChoice .imagePlaceholder {

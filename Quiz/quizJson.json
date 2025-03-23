@@ -4,11 +4,11 @@
         "quizArt": "slider", 
         "bilder":[
             {  
-                "src": "../assets/Baumwolle.webp",
+                "src": "../assets/Baumwolle.jpg",
                 "alt": "Baumwolle"
             },
             {  
-                "src": "../assets/Polyester.webp",
+                "src": "../assets/Polyester.jpg",
                 "alt": "Polyester"
             }
         ],
@@ -21,11 +21,11 @@
         "quizArt": "slider", 
         "bilder":[
             {  
-                "src": "../assets/Streaming.webp",
+                "src": "../assets/Streaming.jpg",
                 "alt": "Handy"
             },
             {  
-                "src": "../assets/Buch.webp",
+                "src": "../assets/Buch.jpg",
                 "alt": "Buch"
             }
         ],
@@ -38,11 +38,11 @@
         "quizArt": "slider", 
         "bilder":[
             {  
-                "src": "../assets/Steak.webp",
+                "src": "../assets/Steak.jpg",
                 "alt": "Rindfleisch"
             },
             {  
-                "src": "../assets/Huhnchen.webp",
+                "src": "../assets/Huhnchen.jpg",
                 "alt": "Huehnerfleisch"
             }
         ],
@@ -55,11 +55,11 @@
         "quizArt": "slider", 
         "bilder":[
             {  
-                "src": "../assets/Schokolade.webp",
+                "src": "../assets/Schokolade.jpg",
                 "alt": "Schokolade"
             },
             {  
-                "src": "../assets/Apfel.webp",
+                "src": "../assets/Apfel.jpg",
                 "alt": "Apfel"
             }
         ],
@@ -72,12 +72,12 @@
         "quizArt": "simple", 
         "bilder":[
             {  
-                "src": "../assets/Fahrrad.webp",
+                "src": "../assets/Fahrrad.jpg",
                 "alt": "Fahrrad",
                 "title": "Ein Jahr Fahrradfahren"
             },
             {  
-                "src": "../assets/U-Bahn.webp",
+                "src": "../assets/U-Bahn.jpg",
                 "alt": "U-Bahn",
                 "title": "Ein Jahr U-Bahn fahren"
             }
@@ -96,12 +96,12 @@
         "quizArt": "simple", 
         "bilder":[
             {  
-                "src": "../assets/Flugzeug.webp",
+                "src": "../assets/Flugzeug.jpg",
                 "alt": "Flugzeug",
                 "title": "Ein Flug von Berlin nach München"
             },
             {  
-                "src": "../assets/Auto.webp",
+                "src": "../assets/Auto.jpg",
                 "alt": "Auto",
                 "title": "500 km Autofahren"
             }
@@ -120,12 +120,12 @@
         "quizArt": "simple", 
         "bilder":[
             {  
-                "src": "../assets/Jeans.webp",
+                "src": "../assets/Jeans.jpg",
                 "alt": "Jeans",
                 "title": "Jeans"
             },
             {  
-                "src": "../assets/Sneaker.webp",
+                "src": "../assets/Sneaker.jpg",
                 "alt": "Sneaker",
                 "title": "Sneaker"
             }
@@ -144,12 +144,12 @@
         "quizArt": "simple", 
         "bilder":[
             {  
-                "src": "../assets/Banane.webp",
+                "src": "../assets/Banane.jpg",
                 "alt": "Banane",
                 "title": "Bananen"
             },
             {  
-                "src": "../assets/Avocado.webp",
+                "src": "../assets/Avocado.jpg",
                 "alt": "Avocado",
                 "title": "Avocados"
             }
@@ -168,7 +168,7 @@
         "quizArt": "multipleChoice", 
         "bilder":[
             {  
-                "src": "../assets/Tomate.webp",
+                "src": "../assets/Tomate.jpg",
                 "alt": "Tomate"
             }
         ],
@@ -188,7 +188,7 @@
         "quizArt": "multipleChoice", 
         "bilder":[
             {  
-                "src": "../assets/Duschen.webp",
+                "src": "../assets/Duschen.jpg",
                 "alt": "Dusche"
             }
         ],
@@ -208,7 +208,7 @@
         "quizArt": "multipleChoice", 
         "bilder":[
             {  
-                "src": "../assets/Aluminium.webp",
+                "src": "../assets/Aluminium.jpg",
                 "alt": "Aluminium"
             }
         ],
@@ -228,7 +228,7 @@
         "quizArt": "multipleChoice", 
         "bilder":[
             {  
-                "src": "../assets/Reis.webp",
+                "src": "../assets/Reis.jpg",
                 "alt": "Reis"
             }
         ],
