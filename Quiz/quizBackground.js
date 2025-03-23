@@ -2,7 +2,7 @@
 
         let jsonObjects = [];
 
-        async function fetchJsonObjects() {
+        async function fetchJsonObjects() { 
             try {
                 const response = await fetch("./quizJson.json");
                 const quizDaten = await response.json();
@@ -19,7 +19,7 @@
             runQuizScript();
         });
                 
-        function runQuizScript() {
+        function runQuizScript() { //Nimmt zufaelliges Quiz aud Liste und nutzt basierend auf Art vorgefertigtes Template
 
             function getRandomQuizObject(){
                 if(jsonObjects.length === 0){
@@ -48,7 +48,7 @@
                 }
             }
 
-            function loadQuiz(quizPath, quizObject) {
+            function loadQuiz(quizPath, quizObject) { //Laedt Quiz Daten ins quizMain.html
 
                 loadHtmlIntoContainer(quizPath, quizObject).then(() => {
                     loadQuizScript(quizObject.quizArt);
@@ -62,7 +62,7 @@
                 console.log("QuizGeladen");
             }
 
-            async function loadHtmlIntoContainer(filePath, quizObject) {
+            async function loadHtmlIntoContainer(filePath, quizObject) { //Laedt HTML Part des Templates
                 try {
                     const response = await fetch(filePath); 
                     if (!response.ok) {
@@ -97,7 +97,7 @@
                 }
             }
 
-            function loadJsonIntoQuiz(quizObject) {
+            function loadJsonIntoQuiz(quizObject) { //Laedt Json Daten in das Html Template
                 const frage = quizObject.frage;
                 const antwort = quizObject.antwort;
                 const imagePlaceholders = document.getElementsByClassName("imagePlaceholder");
@@ -141,8 +141,7 @@
                  
             }
             
-
-            function loadQuizScript(quizArt){
+            function loadQuizScript(quizArt){ //Laedt passendes Skript zur Quiz Art
 
                 const script = document.createElement("script");
 

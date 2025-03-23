@@ -1,7 +1,7 @@
-function activateImagesAsButtons() {
+function activateImagesAsButtons() { //Macht Images zu Knoepfen
     const imageAnswers = document.getElementsByClassName("imagePlaceholderContainer");
 
-    function clickOnImage() {
+    function clickOnImage() { //versteckt und zeigt nach Knopfdruck Html Elemente an
         if (this.id === document.getElementById("correctAnswer").textContent) {
             //Keine Zeit zu implementieren
         }

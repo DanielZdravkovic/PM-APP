@@ -1,4 +1,4 @@
-    function transformValue(val, side) { //Zahlen anpassen automatisch ueber json implementieren
+    function transformValue(val, side) { //Passt die Slide Values von rechts und links an
         let value = 0;
         if (val < 10) {
             value =  10 - val; 
@@ -15,12 +15,12 @@
         }
     }
         
-    document.getElementById("customSlider").addEventListener("input", function () {
+    document.getElementById("customSlider").addEventListener("input", function () { 
         document.getElementById("sliderValueLeft").textContent = transformValue(Number(document.getElementById("customSlider").value), "left");
         document.getElementById("sliderValueRight").textContent = transformValue(Number(document.getElementById("customSlider").value), "right");
     });
 
-    function checkAnswer() {
+    function checkAnswer() { //versteckt und zeigt nach Knopfdruck Html Elemente an
         const answerValue = document.getElementById("customSlider").value; 
         document.getElementById("answerContainer").style.display = "flex";
         nextButton.style.visibility = "visible";
