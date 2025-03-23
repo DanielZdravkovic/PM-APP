@@ -17,12 +17,12 @@ function checkAnswer() {
     for (let i = 0; i < radios.length; i++) {
         const radio = radios[i];
         if (radio.checked && radio.value === correctAnswer) {
-            alert("Correct");//Do something if correct
+           //Keine Zeit zu implementieren
         }
         radio.disabled = true;
     }
 
-    document.getElementById("answerContainer").style.visibility = "visible";
+    document.getElementById("answerContainer").style.display = "flex";
     nextButton.style.visibility = "visible";
     document.getElementById("checkAnswer").style.visibility = "hidden";
     document.getElementById("questionmarkImg").style.display = "none";

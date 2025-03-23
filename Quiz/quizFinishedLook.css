@@ -1,0 +1,37 @@
+body{
+    height: 50vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 2fr 2fr;
+    background-color: #d3e1af;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    text-align: center;
+    justify-content: center; 
+    justify-items: center; 
+    align-items: center;
+}
+
+button{
+    width: auto;
+    height: auto;
+    background-color: #4CAF50;
+    border: 2px solid #378139;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+p {
+    font-size: 30px;
+}
+

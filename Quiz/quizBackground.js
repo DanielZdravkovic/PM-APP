@@ -33,7 +33,6 @@
                 console.log(quizObject);
                 jsonObjects.splice(zufaelligerIndex, 1);
 
-                document.getElementById("quizContainer").innerHTML = quizObject.frage;
                 switch (quizObject.quizArt) {
                     case "multipleChoice":
                         loadQuiz("MultipleChoice/quizFront.html", quizObject);
@@ -51,7 +50,7 @@
 
             function loadQuiz(quizPath, quizObject) {
 
-                loadHtmlIntoContainer(quizPath).then(() => {
+                loadHtmlIntoContainer(quizPath, quizObject).then(() => {
                     loadQuizScript(quizObject.quizArt);
                 }).then(() => {
                     document.getElementById("nextButton").addEventListener("click", function () {
@@ -63,16 +62,38 @@
                 console.log("QuizGeladen");
             }
 
-            async function loadHtmlIntoContainer(filePath) {
+            async function loadHtmlIntoContainer(filePath, quizObject) {
                 try {
                     const response = await fetch(filePath); 
                     if (!response.ok) {
                         throw new Error(`Failed to load HTML file: ${response.statusText}`);
                     }
                     const htmlContent = await response.text();
-                    document.getElementById("quizContainer").innerHTML = htmlContent; 
+                    switch(quizObject.quizArt){
+                        case "multipleChoice":
+                            document.getElementById("quizContainerMultipleChoice").innerHTML = htmlContent;
+                            document.getElementById("quizContainerSimple").innerHTML = "";
+                            document.getElementById("quizContainerSlider").innerHTML = "";
+                            break;
+                        case "simple":
+                            document.getElementById("quizContainerMultipleChoice").innerHTML = "";
+                            document.getElementById("quizContainerSimple").innerHTML = htmlContent;
+                            document.getElementById("quizContainerSlider").innerHTML = "";
+                            break; 
+                        case "slider":
+                            document.getElementById("quizContainerMultipleChoice").innerHTML = "";
+                            document.getElementById("quizContainerSimple").innerHTML = "";
+                            document.getElementById("quizContainerSlider").innerHTML = htmlContent;
+                            break;
+                        default:
+                            document.getElementById("quizContainerMultipleChoice").innerHTML = "Es gab einen Fehler beim Laden des Quiz: " + error;
+                            document.getElementById("quizContainerSimple").innerHTML = "";
+                            document.getElementById("quizContainerSlider").innerHTML = "";
+                        } 
                 } catch (error) {
-                    document.getElementById("quizContainer").innerHTML = "Es gab einen Fehler beim Laden des Quiz: " + error;
+                    document.getElementById("quizContainerMultipleChoice").innerHTML = "Es gab einen Fehler beim Laden des Quiz: " + error;
+                    document.getElementById("quizContainerSimple").innerHTML = "";
+                    document.getElementById("quizContainerSlider").innerHTML = "";
                 }
             }
 
@@ -80,12 +101,16 @@
                 const frage = quizObject.frage;
                 const antwort = quizObject.antwort;
                 const imagePlaceholders = document.getElementsByClassName("imagePlaceholder");
+                const imagePlaceholderTitles = document.getElementsByClassName("imagePlaceholderTitle");
                 let imageIndex = 0;  
             
                 quizObject.bilder.forEach(bild => {
                     if (imagePlaceholders[imageIndex]) {  
                         imagePlaceholders[imageIndex].src = bild.src;
                         imagePlaceholders[imageIndex].alt = bild.alt;
+                        if(quizObject.quizArt === "simple"){
+                            imagePlaceholderTitles[imageIndex].textContent = bild.title;
+                        }
                         imageIndex++;
                     }
                 });
@@ -137,6 +162,7 @@
                 }
 
                 document.getElementById("scriptContainer").appendChild(script);
+                
             }
 
         getRandomQuizObject();

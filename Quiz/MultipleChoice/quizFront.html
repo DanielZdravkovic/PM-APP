@@ -1,5 +1,10 @@
-    <span id="questionContainer">Frage</span>
-    <button id="backButton">Back</button>
+<div id="headContainer">
+    <div></div>
+    <div id="questionContainer">Frage</div>
+    <button id="backButton">Zurück</button>
+</div>
+<div id="quizCenter">
+    <div></div>
     <div id="answers">
         <input type="radio" name="answer" value="answer1">
         <label for="answer1">Antwort 1</label><br>
@@ -10,14 +15,21 @@
         <input type="radio" name="answer" value="answer4">
         <label for="answer4">Antwort 4</label><br>
     </div>
-    <div>
+    <div class="imagePlaceholderContainer">
         <img src="https://via.placeholder.com/150" alt="Bild" class="imagePlaceholder">
         <img src="https://via.placeholder.com/150" alt="Fragezeichen" id="questionmarkImg">
     </div>
-    <button id="checkAnswer" disabled>Antwort</button>
-    <div id="answerContainer" style="visibility:hidden">hiiiii</div>
+    <div></div>  <div></div> 
+    <div>
+        <button id="checkAnswer" disabled>Antwort</button>
+    </div>
+    <div></div> <div></div> 
+</div>
+    <div id="answerContainer" style="display:none">hiiiii</div>
     <div id="correctAnswer" style="visibility:hidden">None</div>
-    <button id="nextButton" style="visibility:hidden">Next</button>
+    <div id="nextButtonGrid">
+        <button id="nextButton" style="visibility:hidden">Weiter</button>
+    </div>
     <div id="scriptContainer"></div>
     
 

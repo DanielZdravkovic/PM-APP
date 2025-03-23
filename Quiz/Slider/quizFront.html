@@ -1,15 +1,34 @@
 
-    <span id="questionContainer">Frage</span>
-    <button id="backButton">Back</button>
-    <img src="https://via.placeholder.com/150" alt="Bild" class="imagePlaceholder">
-    <img src="https://via.placeholder.com/150" alt="Bild" class="imagePlaceholder">
-    <input type="range" id="customSlider" min="0" max="18" value="9" step="1">
-    <span id="sliderValue">1</span>
-
-    <button id="checkAnswer">Antwort</button>
-    
-    <div id="answerContainer" style="visibility:hidden">Antwort</div>
-    <button id="nextButton" style="visibility:hidden">Next</button>
+    <div id="headContainer">
+        <div></div>
+        <div id="questionContainer">Frage</div>
+        <button id="backButton">Zurück</button>
+    </div>
+    <div id="imagePlaceholderGrid">
+        <div></div>
+        <div class="imagePlaceholderContainer">
+            <img src="https://via.placeholder.com/150" alt="Bild" class="imagePlaceholder">
+        </div>
+        <div></div>
+        <div class="imagePlaceholderContainer">
+            <img src="https://via.placeholder.com/150" alt="Bild" class="imagePlaceholder">
+        </div>
+        <div></div>
+    </div>
+    <div id="sliderContainer">
+        <div></div>
+        <span id="sliderValueLeft">1</span>
+        <input type="range" id="customSlider" min="0" max="18" value="9" step="1">
+        <span id="sliderValueRight">1</span>
+        <div></div>  
+    </div>
+    <div id="checkAnswerContainer">
+        <button id="checkAnswer">Antwort</button>
+    </div>
+    <div id="answerContainer" style="display:none">Antwort</div>
+    <div id="nextButtonGrid">
+        <button id="nextButton" style="visibility:hidden">Weiter</button>
+    </div>  
     <div id="scriptContainer"></div>
     
 

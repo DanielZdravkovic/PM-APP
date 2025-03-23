@@ -1,0 +1,54 @@
+body{
+    background-color: #d3e1af;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+
+button{
+    width: auto;
+    height: auto;
+    background-color: #4CAF50;
+    border: 2px solid #378139;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #378139;
+}
+
+#headContainer { 
+    display: grid;
+    grid-template-columns: 1fr 7fr 1fr; 
+    width: 100%; 
+    justify-content: center; 
+    justify-items: center; 
+    align-items: center; 
+    padding: 40px 0px;
+    text-align: center; 
+    font-size: 34px;
+}
+
+#answerContainer{
+    padding-bottom: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+    font-size: 24px;
+}
+
+#nextButtonGrid {
+    display: flex;
+    width: 100%; 
+    align-items: center; 
+    justify-content: center;
+    padding: 10px 0px;
+}
+
+
+

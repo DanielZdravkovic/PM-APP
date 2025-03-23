@@ -1,16 +1,17 @@
 function activateImagesAsButtons() {
-    const imageAnswers = document.getElementsByClassName("imagePlaceholder");
+    const imageAnswers = document.getElementsByClassName("imagePlaceholderContainer");
 
     function clickOnImage() {
         if (this.id === document.getElementById("correctAnswer").textContent) {
-            alert("correct");// Do something if correct
+            //Keine Zeit zu implementieren
         }
 
-        document.getElementById("answerContainer").style.visibility = "visible";
+        document.getElementById("answerContainer").style.display = "flex";
         document.getElementById("nextButton").style.visibility = "visible";
 
         for (const img of imageAnswers) {
             img.removeEventListener("click", clickOnImage);
+            img.style.pointerEvents = "none";
         }
     }
 

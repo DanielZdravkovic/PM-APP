@@ -1,22 +1,30 @@
-    function transformValue(val) { //Zahlen anpassen automatisch ueber json implementieren
+    function transformValue(val, side) { //Zahlen anpassen automatisch ueber json implementieren
+        let value = 0;
         if (val < 10) {
-            return  10 - val; 
+            value =  10 - val; 
         } 
         else {
-            return val - 8; 
+            value = val - 8; 
+        }
+
+        if(side==="left"){
+            return val>9 ? 1 : value;
+        }
+        else{
+            return val>9 ? value : 1;
         }
     }
         
     document.getElementById("customSlider").addEventListener("input", function () {
-        document.getElementById("sliderValue").textContent = transformValue(Number(document.getElementById("customSlider").value));
+        document.getElementById("sliderValueLeft").textContent = transformValue(Number(document.getElementById("customSlider").value), "left");
+        document.getElementById("sliderValueRight").textContent = transformValue(Number(document.getElementById("customSlider").value), "right");
     });
 
     function checkAnswer() {
         const answerValue = document.getElementById("customSlider").value; 
-        alert(answerValue);
-        document.getElementById("answerContainer").style.visibility = "visible";
+        document.getElementById("answerContainer").style.display = "flex";
         nextButton.style.visibility = "visible";
-        document.getElementById("checkAnswer").style.visibility = "hidden";
+        document.getElementById("checkAnswer").style.display = "none";
         document.getElementById("customSlider").disabled = true;
     }
 
