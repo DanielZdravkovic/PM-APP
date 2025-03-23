@@ -20,6 +20,7 @@
     transform: scale(1.2); 
     border-width: 3px; 
     border-style: solid;
+    cursor: pointer;
 }
 
 #quizContainerSimple #imagePlaceholderGrid {
