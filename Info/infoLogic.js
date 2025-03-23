@@ -66,8 +66,18 @@ function openPopup(videoSrc) {
         popup = document.createElement("div");
         popup.id = "video-popup";
         popup.style.position = "absolute";
-        popup.style.top = "40%";
-        popup.style.left = "50%";
+        const bubble = event.currentTarget;
+        const rect = bubble.getBoundingClientRect();
+        popup.style.left = `${rect.left}px`;
+        popup.style.top = `${rect.top - 45}px`;
+        if(bubble.id === "bArkMee"){
+            popup.style.left = `${rect.left + 320}px`;
+            popup.style.top = `${rect.top - 90}px`;
+        } else if(bubble.id === "bJetStr"){
+            popup.style.left = `${rect.left + 530}px`;
+            popup.style.top = `${rect.top - 170}px`;
+        }
+
         popup.style.transform = "translate(-50%, -50%)";
         popup.style.width = "40vw";
         popup.style.height = "40vh";
