@@ -2,7 +2,7 @@ function clickedRadio() {
     document.getElementById("checkAnswer").disabled = false;
 }
 
-function activateRadiosAsButtons() {
+function activateRadiosAsButtons() { 
     const radios = document.getElementsByName("answer");
     for (const radio of radios) {
         radio.addEventListener("click", clickedRadio);
@@ -11,7 +11,7 @@ function activateRadiosAsButtons() {
 
 activateRadiosAsButtons();
 
-function checkAnswer() {
+function checkAnswer() { //versteckt und zeigt nach Knopfdruck Html Elemente an
     const correctAnswer = document.getElementById("correctAnswer").textContent;
     const radios = document.getElementsByName("answer");
     for (let i = 0; i < radios.length; i++) {
