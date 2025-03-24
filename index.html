@@ -5,6 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="menu.css">
     <title>CO2 Abdruck</title>
+</head>
+<body>
+    <div class="header-container">
+        <h1>Dis<em>CO₂</em>ver</h1>
+    </div>
+    <div class="bild-wrapper">
+        <img src="images/blaetter2.png" alt="Blätter" id="blatt">
+    
+        <button class="button-info" onclick="infoAufrufen()">
+            <img src="images/info.png" alt="Bild-Button" class="bild" style="width:100px; height:auto;">
+            <p>Info</p>
+        </button>
+        <button class="button-quiz" onclick="quizAufrufen()">
+            <img src="images/fragezeichen.png" alt="Bild-Button" class="bild" style="width:100px; height:auto;">
+            <p>Quiz</p>
+        </button>
+        <button class="button-co2" onclick="co2Aufrufen()">
+            <img src="images/fußabdruck.png" alt="Bild-Button" class="bild" style="width:100px; height:auto;">
+            <p>CO2</p>
+        </button>
+    </div>
+
     <script>
         function quizAufrufen() {
             window.location.href = "Quiz/quizMain.html";
@@ -16,33 +38,5 @@
             window.location.href = "Abdruck/co2Front.html";
         }
     </script>
-</head>
-<body>
-    <div class="header-container">
-        <h1>Willkommen in unserer Welt</h1>
-    </div>
-    
-    <div class="bild-container">
-        <div class="button-container">
-            <button class="menu-button button-co2" onclick="co2Aufrufen()">
-                <img src="images/fragezeichen.png" alt="Bild-Button" style="width:100px; height:auto;">
-                <p>CO2</p>
-            </button>
-        </div>
-        <div class="bild-wrapper">
-          <img src="images/blaetter.jpg" alt="Blätter">
-        
-          <button class="menu-button button-quiz" onclick="quizAufrufen()">
-            <img src="images/fußabdruck.png" alt="Bild-Button" style="width:100px; height:auto;">
-            <p>Quiz</p>
-          </button>
-          <button class="menu-button button-info" onclick="infoAufrufen()">
-            <img src="images/info.png" alt="Bild-Button" style="width:100px; height:auto;">
-            <p>Info</p>
-          </button>
-        </div>
-    </div>
-      
-      
 </body>
 </html>
