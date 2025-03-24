@@ -21,6 +21,8 @@ p{
   background-color: #d3e1af;
   width: 100%;
   text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 #blatt {
   position: absolute;
@@ -29,8 +31,15 @@ p{
   height: auto;
   display: block;
 }
-button{
+.button{
   position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  overflow: hidden;
   width: 8vw;
   height: 17vh;
   border: 3px solid black;
@@ -38,19 +47,20 @@ button{
   border-radius: 10%;
   transition: transform 0.2s ease-in-out;
 }
-button:hover {
+
+.button:hover {
   cursor: pointer;
   transform: scale(1.1);
 }
-.button-co2 {
+#button-co2 {
   top: 23vh;
   left: 75vw;
   } 
-.button-info {
+#button-info {
   top: 35vh;
   left: 13vw;
 }
-.button-quiz {
+#button-quiz {
   top: 0vh;
   left: 45vw;
 }

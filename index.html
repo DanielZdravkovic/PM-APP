@@ -13,30 +13,35 @@
     <div class="bild-wrapper">
         <img src="images/blaetter2.png" alt="Blätter" id="blatt">
     
-        <button class="button-info" onclick="infoAufrufen()">
+        <!--<button class="button-info" onclick="infoAufrufen()">-->
+        <div class="button" id="button-info">
             <img src="images/info.png" alt="Bild-Button" class="bild" style="width:100px; height:auto;">
             <p>Info</p>
-        </button>
-        <button class="button-quiz" onclick="quizAufrufen()">
+        </div>
+
+        <!--<button class="button-quiz" onclick="quizAufrufen()">-->
+        <div class="button" id="button-quiz">
             <img src="images/fragezeichen.png" alt="Bild-Button" class="bild" style="width:100px; height:auto;">
             <p>Quiz</p>
-        </button>
-        <button class="button-co2" onclick="co2Aufrufen()">
+        </div>
+
+        <!--<button class="button-co2" onclick="co2Aufrufen()">-->
+        <div class="button" id="button-co2">
             <img src="images/fußabdruck.png" alt="Bild-Button" class="bild" style="width:100px; height:auto;">
             <p>CO2</p>
-        </button>
+        </div>
     </div>
 
     <script>
-        function quizAufrufen() {
-            window.location.href = "Quiz/quizMain.html";
-        }
-        function infoAufrufen() {
+        document.getElementById("button-info").addEventListener("click", function(){
             window.location.href = "Info/infoFront.html";
-        }
-        function co2Aufrufen() {
+        });
+        document.getElementById("button-quiz").addEventListener("click", function(){
+            window.location.href = "Quiz/quizMain.html";
+        });
+        document.getElementById("button-co2").addEventListener("click", function(){
             window.location.href = "Abdruck/co2Front.html";
-        }
+        });
     </script>
 </body>
 </html>
