@@ -1,11 +1,66 @@
-body{
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
     background-color: #d3e1af;
+    overflow: hidden;
+  }
+  
+/* Container unten fixiert und zentriert */
+.bild-container {
+position: absolute;
+bottom: 0;
+left: 50%;
+transform: translateX(-50%);
+width: 1100px;
+text-align: center;
 }
-img {
+
+.bild-wrapper {
+position: relative;
+width: 100%;
+}
+
+.bild-wrapper img {
+width: 100%;
+height: auto;
+display: block;
+}
+
+/* Das Bild */
+.blaetter {
+width: 100%;
+height: auto;
+display: block;
+}
+
+/* Der Button – liegt über dem Bild, im Flow */
+.menu-button {
+    margin-bottom: 20px; /* Abstand zwischen Button und Bild */
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #406343;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.button-quiz {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); /* Perfekte Zentrierung */
-    width: 900px;  /* Größe ändern */
-    height: auto;  
+    top: 25%;
+    left: 15%;
+    transform: translateX(-50%);
+    
+  }
+  
+.button-info {
+    position: absolute;
+    top: 25%;
+    left: 86%;
+    transform: translateX(-50%);
+}
+
+h1{
+text-align: center;
+font-family: 'Inter', sans-serif;
 }

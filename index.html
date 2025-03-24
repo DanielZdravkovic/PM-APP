@@ -18,10 +18,18 @@
     </script>
 </head>
 <body>
-    <h1>Willkommen bei meiner App!</h1>
-    <button onclick="quizAufrufen()">Quiz</button>
-    <button onclick="infoAufrufen()">Info</button>
-    <button onclick="co2Aufrufen()">CO2</button>
-    <img src="images/blaetter.jpg" alt="Blätter" class="blaetter">
+    <h1>Willkommen in unserer Welt</h1>
+    
+    <div class="bild-container">
+        <button class="menu-button button-co2" onclick="co2Aufrufen()">CO2</button>
+        <div class="bild-wrapper">
+          <img src="images/blaetter.jpg" alt="Blätter">
+      
+          <button class="menu-button button-quiz" onclick="quizAufrufen()"></button>
+          <button class="menu-button button-info" onclick="infoAufrufen()">Info</button>
+        </div>
+    </div>
+      
+      
 </body>
 </html>
