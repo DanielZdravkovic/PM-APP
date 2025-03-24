@@ -12,7 +12,7 @@ position: absolute;
 bottom: 0;
 left: 50%;
 transform: translateX(-50%);
-width: 1100px;
+width: 1000px;
 text-align: center;
 }
 
@@ -36,7 +36,7 @@ display: block;
 
 /* Der Button – liegt über dem Bild, im Flow */
 .menu-button {
-    margin-bottom: 20px; /* Abstand zwischen Button und Bild */
+    margin-bottom: 10px; /* Abstand zwischen Button und Bild */
     padding: 10px 20px;
     font-size: 18px;
     background-color: #406343;
@@ -45,10 +45,17 @@ display: block;
     border-radius: 8px;
     cursor: pointer;
 }
+
+.button-co2 img{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .button-quiz {
     position: absolute;
     top: 25%;
-    left: 15%;
+    left: 14%;
     transform: translateX(-50%);
     
   }
@@ -56,11 +63,12 @@ display: block;
 .button-info {
     position: absolute;
     top: 25%;
-    left: 86%;
+    left: 87%;
     transform: translateX(-50%);
 }
 
 h1{
 text-align: center;
 font-family: 'Inter', sans-serif;
+margin-top: 0;
 }
