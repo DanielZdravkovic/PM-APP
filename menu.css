@@ -3,7 +3,6 @@ body, html {
     padding: 0;
     height: 100%;
     background-color: #d3e1af;
-    overflow: hidden;
   }
   
 /* Container unten fixiert und zentriert */
@@ -14,6 +13,10 @@ left: 50%;
 transform: translateX(-50%);
 width: 1000px;
 text-align: center;
+}
+
+p{
+  margin: 0;
 }
 
 .bild-wrapper {
@@ -36,38 +39,48 @@ display: block;
 
 /* Der Button – liegt über dem Bild, im Flow */
 .menu-button {
-    margin-bottom: 10px; /* Abstand zwischen Button und Bild */
-    padding: 10px 20px;
-    font-size: 18px;
-    background-color: #406343;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
+  margin-bottom: 10px; /* Abstand zwischen Button und Bild */
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #406343;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.menu-button:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+  z-index: 1;
+  background-color: #406343; /* behält die Hintergrundfarbe bei */
 }
 
-.button-co2 img{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.button-quiz:hover {
+  transform: translateX(-100%) scale(1.2);
 }
 
 .button-quiz {
-    position: absolute;
-    top: 25%;
-    left: 14%;
-    transform: translateX(-50%);
-    
+  position: absolute;
+  top: 25%;
+  left: 14%;
+  transform: translateX(-50%);
   }
   
 .button-info {
-    position: absolute;
-    top: 25%;
-    left: 87%;
-    transform: translateX(-50%);
+  position: absolute;
+  top: 25%;
+  left: 87%;
+  transform: translateX(-50%);
 }
 
-h1{
+.header-container {
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  position: relative; /* wichtig für flexibles Verhalten */
+}
+
+.header-container h1{
 text-align: center;
 font-family: 'Inter', sans-serif;
 margin-top: 0;

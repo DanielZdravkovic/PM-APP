@@ -18,23 +18,27 @@
     </script>
 </head>
 <body>
-    <h1>Willkommen in unserer Welt</h1>
+    <div class="header-container">
+        <h1>Willkommen in unserer Welt</h1>
+    </div>
     
     <div class="bild-container">
-        <button class="menu-button button-co2" onclick="co2Aufrufen()">
-            <img src="images/fragezeichen.png" alt="Bild-Button" style="width:100px; height:auto;">
-            CO2
-        </button>
+        <div class="button-container">
+            <button class="menu-button button-co2" onclick="co2Aufrufen()">
+                <img src="images/fragezeichen.png" alt="Bild-Button" style="width:100px; height:auto;">
+                <p>CO2</p>
+            </button>
+        </div>
         <div class="bild-wrapper">
           <img src="images/blaetter.jpg" alt="Blätter">
-      
+        
           <button class="menu-button button-quiz" onclick="quizAufrufen()">
             <img src="images/fußabdruck.png" alt="Bild-Button" style="width:100px; height:auto;">
-            Quiz
+            <p>Quiz</p>
           </button>
           <button class="menu-button button-info" onclick="infoAufrufen()">
             <img src="images/info.png" alt="Bild-Button" style="width:100px; height:auto;">
-            Info
+            <p>Info</p>
           </button>
         </div>
     </div>
