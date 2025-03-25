@@ -42,8 +42,8 @@ p{
   overflow: hidden;
   width: 8vw;
   height: 17vh;
-  border: 3px solid black;
-  background-color: rgb(93, 133, 65);
+  border: 3px solid #3a9a3d;
+  background-color: #4CAF50;
   border-radius: 10%;
   transition: transform 0.2s ease-in-out;
 }
@@ -51,6 +51,7 @@ p{
 .button:hover {
   cursor: pointer;
   transform: scale(1.1);
+  background-color: #3a9a3d;
 }
 #button-co2 {
   top: 23vh;
