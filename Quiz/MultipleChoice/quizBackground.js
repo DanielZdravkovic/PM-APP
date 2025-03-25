@@ -26,7 +26,7 @@ function checkAnswer() { //versteckt und zeigt nach Knopfdruck Html Elemente an
     document.getElementById("nextButton").style.visibility = "visible";
     document.getElementById("checkAnswer").style.visibility = "hidden";
     images[0].style.display = "flex";
-    images[1].style.display = "none";
+    document.getElementById("Fragezeichen").style.display = "none";
 }
 
 document.getElementById("checkAnswer").addEventListener("click", checkAnswer);

@@ -40,3 +40,7 @@
     background-color: white;
     border: #378139 2px solid;
 }
+
+#quizContainerMultipleChoice #Fragezeichen{
+    font-size: 500px;
+}
