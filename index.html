@@ -9,6 +9,28 @@
 <body>
     <div class="header-container">
         <h1>Dis<em>CO₂</em>ver</h1>
+        <button onclick="exitApp()" id="exitButton">Beenden</button>
+        <script>
+        function exitApp() {
+            // Für Webbrowser
+            window.close();
+            
+            // Für Electron oder WebView-basierte Apps
+            if (window.close) {
+                window.close();
+            }
+            
+            // Fallback für verschiedene Plattformen
+            try {
+                open(location, '_self').close();
+            } catch(e) {
+                // Als letzter Versuch: Fenster ausblenden
+                window.opener = null;
+                window.open('', '_self');
+                window.close();
+            }
+        }
+    </script>
     </div>
     <div class="bild-wrapper">
         <img src="images/blaetter2.png" alt="Blätter" id="blatt">
